@@ -1,0 +1,284 @@
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+          <h6><i class="bi bi-bar-chart"></i> Volume & OI</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>24H Volume : </span>
+              <span> ${{ getTotalVolume() | numberFormatter}}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>${{ getTotalOpenInterest()| numberFormatter }}</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+          <h6 ><i class="bi bi-graph-up"></i> Highest Volume Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+              <span>{{ getHighestVolumeTicker().ticker }}</span>
+              <br>
+              <span>Volume : </span>
+              <span>${{ getHighestVolumeTicker().volume | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+        <h6><i class="bi bi-journal-text"></i> Highest OI Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+              <span>{{ getHighestOpenInterestTicker().ticker }}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>${{ getHighestOpenInterestTicker().openInterest | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <div class="card mt-3" style="border: 0.5px solid #45f3ff">
+      <div class="card-header" style="text-align: center; color: white; font-weight: bold; font-size: 13px;">
+        Global Futures
+        <div style="float: right;">
+          <button class="btn btn-primary btn-sm float-right" (click)="toggleFilterForm()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+              <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+
+        </div>
+        <div class="row" style="float: left;">
+          <div class="col-md-4">
+            <select [(ngModel)]="mode" class="form-control form-control-sm">
+              <option value="USD" selected>USD</option>
+              <option value="Notional">Notional</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input type="text" [(ngModel)]="searchText" class="form-control form-control-sm" placeholder="Search by Ticker" (input)="filterByTicker()">
+          </div>
+        </div>
+      </div>
+
+      <app-futures-filter *ngIf="showFilterForm" [futures]="futures"(filterApplied)="applyAdvancedFilter($event)"></app-futures-filter>
+
+      <div class="table-wrapper">
+        <table class="table table-dark table-striped" style="text-align: center">
+          <thead>
+            <tr>
+              <th (click)="sortTable('ticker.value')">Ticker{{ getSortingIndicator('ticker.value') }}</th>
+              <th (click)="sortTable('price.value')">Price{{ getSortingIndicator('price.value') }}</th>
+              <th (click)="sortTable('change.value')">Chg%{{ getSortingIndicator('change.value') }}</th>
+              <th (click)="sortTable('basis.value')">Basis{{ getSortingIndicator('basis.value') }}</th>
+           <!--    <th (click)="sortTable('basis.change')">Chg%{{ getSortingIndicator('basis.change') }}</th> -->
+              <th (click)="sortTable('yield.value')">APR{{ getSortingIndicator('yield.value') }}</th>
+              <!------24 h volume ----->
+              <th (click)="sortTable('volume.value')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? '24h Volume' : '24h Volume' }}
+                {{ getSortingIndicator( 'volume.value') }}
+              </th>
+
+              <th (click)="sortTable('volume.notional')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? '24h Volume' : '24h Volume' }}
+                {{ getSortingIndicator( 'volume.notional') }}
+              </th>
+
+              <!------24 h volume chg%----->
+              <th (click)="sortTable('volume.change_usd_percentage')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator('volume.change_usd_percentage') }}
+
+              <th (click)="sortTable('volume.change_notional_percentage')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator( 'volume.change_notional_percentage') }}
+              </th>
+
+              <!------OI ----->
+              <th (click)="sortTable('open_interest.value')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'Open Interest' : 'Open Interest' }}
+                {{ getSortingIndicator('open_interest.value') }}
+              </th>
+
+              <th (click)="sortTable('open_interest.notional')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Open Interest' : 'Open Interest' }}
+                {{ getSortingIndicator( 'open_interest.notional') }}
+              </th>
+
+              <!------OI Change----->
+              <th (click)="sortTable('open_interest.change_usd')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'OI Change' : 'OI Change' }}
+                {{ getSortingIndicator('open_interest.change_usd') }}
+              </th>
+
+              <th (click)="sortTable('open_interest.change_notional')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'OI Change' : 'OI Change' }}
+                {{ getSortingIndicator( 'open_interest.change_notional') }}
+              </th>
+
+              <!------OI Change chg%----->
+              <th (click)="sortTable('open_interest.change_usd_percentage')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator('open_interest.change_usd_percentage') }}
+              </th>
+
+              <th (click)="sortTable('open_interest.change_notional_percentage')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator( 'open_interest.change_notional_percentage') }}
+              </th>
+
+              <th (click)="sortTable('open_interest_volume.value')">OI/24h Volume{{
+                getSortingIndicator('open_interest_volume.value') }}</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngIf="isLoading" class="row-spinner">
+              <td colspan="3">
+                <div></div>
+              </td>
+            </tr>
+
+<!--        <tr *ngFor="let future of futures| paginate: { itemsPerPage: pageSize, currentPage: currentPage } "> -->
+  <tr *ngFor="let future of futures | paginate: { itemsPerPage: pageSize, currentPage: currentPage } " (click)="navigateToDetail(future.ticker.value)">
+              <td>{{ future.ticker.value }}</td>
+
+              <td colspan="2">
+                ${{ future.price.value !== undefined && future.price.value !== 0 ? (future.price.value |numberFormatter) :'-' }}
+
+                ({{ future.change.value !== undefined && future.change.value !== null && future.change.value !== 0 ?(future.change.value.toFixed(2)+'%') :'-' }})
+              </td>
+
+                <td  [style.background-color]="getGradientColor(future.basis.intensity)">
+                  {{ future.basis.value !== undefined && future.basis.value !== null && future.basis.value !== 0 ? (future.basis.value.toFixed(2)) : '-' }}
+              </td>
+
+
+              <td [style.background-color]="getGradientColor(future.yield.intensity)">
+                {{ future.yield.value !== undefined && future.yield.value !== null &&future.yield.value !== 0 ? (future.yield.value.toFixed(2) +'%') : '-' }}
+              </td>
+
+              <td colspan="2" [style.background-color]="getGradientColor(future.volume.intensity)">$ {{ mode === 'USD' ?
+                (future.volume.value !== undefined && future.volume.value !== 0 ? (future.volume.value |
+                numberFormatter) : '-') : (future.volume.notional !== undefined && future.volume.notional !== 0 ?
+                (future.volume.notional | numberFormatter) : '-') }}
+
+                ({{ mode === 'USD' ? (future.volume.change_usd_percentage !== undefined &&
+                future.volume.change_usd_percentage !== 0 ? (future.volume.change_usd_percentage | numberFormatter) +
+                '%' : '-') : (future.volume.change_notional_percentage !== undefined &&
+                future.volume.change_notional_percentage !== 0 ? (future.volume.change_notional_percentage |
+                numberFormatter) + '%' : '-') }})
+              </td>
+
+              <td [style.background-color]="getGradientColor(future.open_interest.intensity)">
+                ${{ mode === 'USD' ? (future.open_interest.value !== undefined && future.open_interest.value !== 0 ?
+                (future.open_interest.value | numberFormatter) : '-') : (future.open_interest.notional !== undefined &&
+                future.open_interest.notional !== 0 ? (future.open_interest.notional | numberFormatter) : '-') }}
+              </td>
+
+              <td colspan="2" [style.background-color]="getGradientColor(future.open_interest.intensity)">
+                ${{ mode === 'USD' ? (future.open_interest.change_usd !== undefined && future.open_interest.change_usd
+                !== 0 ? (future.open_interest.change_usd | numberFormatter) : '-') :
+                (future.open_interest.change_notional !== undefined && future.open_interest.change_notional !== 0 ?
+                (future.open_interest.change_notional | numberFormatter) : '-') }}
+
+                ({{ mode === 'USD' ? (future.open_interest.change_usd_percentage !== undefined &&
+                future.open_interest.change_usd_percentage !== 0 ? (future.open_interest.change_usd_percentage |
+                numberFormatter) + '%': '-') : (future.open_interest.change_notional_percentage !== undefined &&
+                future.open_interest.change_notional_percentage !== 0 ? (future.open_interest.change_notional_percentage
+                | numberFormatter) + '%': '-') }})
+              </td>
+
+              <td  [style.background-color]="getGradientColor(future.open_interest.intensity)">
+                {{ future.open_interest_volume.value !== undefined && future.open_interest_volume.value!== 0 ?
+                (future.open_interest_volume.value | numberFormatter) : '-' }}
+
+              </td>
+
+
+            </tr>
+
+          </tbody>
+
+        </table>
+      </div>
+      <div class="pagination-controls">
+        <pagination-controls (pageChange)="pageChanged($event)" previousLabel="" nextLabel=""></pagination-controls>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header" style="text-align: center;">
+            Global Futures Volume Distribution
+          </div>
+          <div class="card-body">
+            <canvas id="volumeDistributionChart" width="50" height="20">
+
+              {{ volumeDistributionChart}}
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header"style="text-align: center;">
+            Global Futures OI Distribution
+          </div>
+          <div class="card-body">
+            <canvas id="openInterestDistributionChart" width="50" height="20">
+
+              {{ openInterestDistributionChart}}
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</div>
+</body>

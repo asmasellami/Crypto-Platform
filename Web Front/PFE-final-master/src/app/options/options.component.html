@@ -1,0 +1,278 @@
+
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+            <h6 style="font-weight: bold;">Volume & OI</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>24H Volume : </span>
+              <span>${{ getTotalVolume() | numberFormatter }}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>${{ getTotalOpenInterest() | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+          <h6 ><i class="bi bi-graph-up"></i> Highest Volume Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+              <span>{{ getHighestVolumeTicker().ticker }}</span>
+              <br>
+              <span>Volume : </span>
+              <span>${{ getHighestVolumeTicker().volume | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+        <h6><i class="bi bi-journal-text"></i> Highest OI Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+              <span>{{ getHighestOpenInterestTicker().ticker }}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>${{ getHighestOpenInterestTicker().openInterest | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="card mt-3"  style="border: 0.5px solid #45f3ff">
+      <div class="card-header" style="text-align: center; color: white; font-weight: bold; font-size: 13px;">
+        Global Options
+       <div style="float: right;">
+          <button class="btn btn-primary btn-sm float-right" (click)="toggleFilterForm()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+              <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+            </svg>
+          </button>
+
+        </div>
+
+        <div class="row" style="float: left;">
+          <div class="col-md-4">
+            <select [(ngModel)]="mode" class="form-control form-control-sm">
+              <option value="USD" selected>USD</option>
+              <option value="Notional">Notional</option>
+            </select>
+          </div>
+          <div class="col-md-6">
+            <input type="text" [(ngModel)]="searchText" class="form-control form-control-sm" placeholder="Search by Ticker" (input)="filterByTicker()">
+          </div>
+        </div>
+
+      </div>
+
+      <app-options-filter *ngIf="showFilterForm" [options]="options" (filterApplied)="applyAdvancedFilter($event)"></app-options-filter>
+      <div class="table-wrapper">
+
+
+        <table class="table table-dark table-striped" style="text-align: center"  *ngIf="!isLoading" >
+          <thead>
+            <tr>
+              <th (click)="sortTable('ticker.value')">Ticker{{ getSortingIndicator('ticker.value') }}</th>
+              <th (click)="sortTable('underlying_price.value')">Underlying Price{{
+                getSortingIndicator('underlying_price.value') }}</th>
+              <th (click)="sortTable('change.value')">Chg% {{ getSortingIndicator('change.value') }}</th>
+              <th (click)="sortTable('basis.value')">Basis {{ getSortingIndicator('basis.value') }}</th>
+
+              <th (click)="sortTable('atm_vol.value')">ATM Vol{{ getSortingIndicator('atm_vol.value') }}</th>
+              <th (click)="sortTable('_25_delta_risk_reversal.value')">25Δ RR{{
+                getSortingIndicator('_25_delta_risk_reversal.value') }}</th>
+
+              <th (click)="sortTable('_25_delta_butterfly.value')">25Δ BF{{
+                getSortingIndicator('_25_delta_butterfly.value') }}</th>
+
+
+<!--24 h volume-->
+              <th (click)="sortTable('volume.value')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? '24h Volume' : '24h Volume' }}
+                {{ getSortingIndicator('volume.value' ) }}
+              </th>
+
+              <th (click)="sortTable('volume.notional')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator( 'volume.notional') }}
+              </th>
+
+              <!--24h volume chg%-->
+              <th (click)="sortTable('volume.change_usd_percentage')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator('volume.change_usd_percentage' )}}
+              </th>
+
+              <th (click)="sortTable('volume.change_notional_percentage')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator( 'volume.change_notional_percentage') }}
+              </th>
+
+
+              <th (click)="sortTable('open_interest.value')">Total OI{{ getSortingIndicator('open_interest.value') }}
+              </th>
+
+<!--oi change-->
+              <th (click)="sortTable('open_interest.change_usd')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'OI Change' : 'OI Change' }}
+                {{ getSortingIndicator('open_interest.change_usd')}}
+              </th>
+              <th (click)="sortTable('open_interest.change_notional')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'OI Change' : 'OI Change' }}
+                {{ getSortingIndicator( 'open_interest.change_notional') }}
+              </th>
+
+<!--oi change chg%-->
+              <th (click)="sortTable('open_interest.change_usd_percentage')" *ngIf="mode==='USD'">
+                {{ mode === 'USD' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator('open_interest.change_usd_percentage' ) }}
+              </th>
+
+              <th (click)="sortTable('open_interest.change_notional_percentage')" *ngIf="mode==='Notional'">
+                {{ mode === 'Notional' ? 'Chg%' : 'Chg%' }}
+                {{ getSortingIndicator( 'open_interest.change_notional_percentage') }}
+              </th>
+
+            </tr>
+
+
+          </thead>
+
+          <tbody>
+            <tr *ngIf="isLoading" class="row-spinner">
+              <td colspan="3">
+                <div></div>
+              </td>
+            </tr>
+
+          <tbody>
+            <tr *ngFor="let option of options | paginate: { itemsPerPage: pageSize, currentPage: currentPage }" (click)="navigateToDetail(option.ticker.value)">
+
+              <td>{{ option.ticker.value }}</td>
+
+              <td colspan="2">{{'$' +(option.underlying_price.value !== undefined && option.underlying_price.value !== 0 ?
+                (option.underlying_price.value | numberFormatter) : '-' )}}
+            ({{ option.change.value !== undefined && option.change.value !== 0 ? ((option.change.value | numberFormatter) + '%') : '-'}})</td>
+
+
+              <td [style.background-color]="getGradientColor(option.basis.intensity)">{{ option.basis.value !==
+                undefined && option.basis.value !== 0 ? (option.basis.value | numberFormatter): '-' }} </td>
+
+
+              <td [style.background-color]="getGradientColor(option.atm_vol.intensity)">{{ option.atm_vol.value !==
+                undefined && option.atm_vol.value !== 0 ? (option.atm_vol.value | numberFormatter ): '-' }}</td>
+
+
+              <td [style.background-color]="getGradientColor(option._25_delta_risk_reversal.intensity)">{{option._25_delta_risk_reversal.value !== undefined && option._25_delta_risk_reversal.value !== 0 ? (option._25_delta_risk_reversal.value | numberFormatter): '-' }}</td>
+
+              <td  [style.background-color]="getGradientColor(option._25_delta_butterfly.intensity)" >{{option._25_delta_butterfly.value !== undefined && option._25_delta_butterfly.value !== 0 ?(option._25_delta_butterfly.value | numberFormatter): '-' }}</td>
+
+
+              <td colspan="2" [style.background-color]="getGradientColor(option.volume.intensity)">${{ mode === 'USD' ?(option.volume.value !== undefined && option.volume.value !== 0 ? (option.volume.value |
+                numberFormatter) : '-') : (option.volume.notional !== undefined && option.volume.notional !== 0 ?(option.volume.notional | numberFormatter) : '-') }}
+
+               ( {{ mode === 'USD' ? (option.volume.change_usd_percentage !== undefined &&
+                option.volume.change_usd_percentage !== 0 ? (option.volume.change_usd_percentage | numberFormatter) +
+                '%' : '-') : (option.volume.change_notional_percentage !== undefined &&
+                option.volume.change_notional_percentage !== 0 ? (option.volume.change_notional_percentage |
+                numberFormatter) + '%' : '-') }})
+              </td>
+
+
+              <td [style.background-color]="getGradientColor(option.open_interest.intensity)">
+                {{ '$'+(mode === 'USD' ? (option.open_interest.value !== undefined && option.open_interest.value !== 0 ?
+                (option.open_interest.value | numberFormatter) : '-') : (option.open_interest.notional !== undefined &&
+                option.open_interest.notional !== 0 ? (option.open_interest.notional | numberFormatter) : '-') )}}
+              </td>
+
+              <td colspan="2" [style.background-color]="getGradientColor(option.open_interest.intensity)">
+                {{ mode === 'USD' ? (option.open_interest.change_usd !== undefined && option.open_interest.change_usd
+                !== 0 ? (option.open_interest.change_usd | numberFormatter)+ '$' : '-') :
+                (option.open_interest.change_notional !== undefined && option.open_interest.change_notional !== 0 ?
+                (option.open_interest.change_notional | numberFormatter) : '-') }}
+
+
+             ({{ option.open_interest.change_usd_percentage !== undefined &&
+                option.open_interest.change_usd_percentage!== 0 ? ((option.open_interest.change_usd_percentage| numberFormatter) + '%') :
+                '-' }})</td>
+            </tr>
+          </tbody>
+
+
+        </table>
+      </div>
+      <div class="pagination-controls">
+        <pagination-controls (pageChange)="pageChanged($event)" previousLabel="" nextLabel=""></pagination-controls>
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header" style="text-align:center;">
+            Global Options Volume Distribution by Currency
+          </div>
+          <div class="card-body">
+            <canvas id="volumeDistributionChart" width="400" height="200">
+
+              {{ volumeDistributionChart}}
+            </canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header" style="text-align: center;">
+            Global Options OI Distribution
+          </div>
+          <div class="card-body">
+            <canvas id="openInterestDistributionChart" width="400" height="200">
+
+              {{ openInterestDistributionChart}}
+            </canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>

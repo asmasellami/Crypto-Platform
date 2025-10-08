@@ -1,0 +1,35 @@
+
+
+<head>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+
+
+            <form action="" class="sign-in-form">
+                <h2 class="title">SIGN IN</h2>
+
+                <!--   <div class="alert alert-danger" *ngIf="err==1">
+                    <strong>{{message}}</strong>
+                    </div>
+ -->
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" name="username" class="form-control" [(ngModel)]="user.username" placeholder="Username">
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+
+                  <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="Password">
+                </div>
+                <a routerLink="/resetPassword" routerLinkActive="router-link-active"  class="forgot-password">Forgot password?</a>
+                <a routerLink="/forgetPassword" routerLinkActive="router-link-active"  class="forgot-password">Activate Account?</a>
+                <input type="submit"  (click)="onLoggedin()" value="Login" class="btn">
+               <p>Don't have an account?  <a routerLink="/register"  class="account-text" id="sign-up-link">Sign up</a></p>
+
+            </form>
+
+        </div>
+</body>

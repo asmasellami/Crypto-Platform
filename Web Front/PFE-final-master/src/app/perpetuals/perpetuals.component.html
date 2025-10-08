@@ -1,0 +1,308 @@
+<!-- <body>
+  <app-menu></app-menu>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+
+          <div class="card-title" style="color: white;">
+            <h6 style="font-weight: bold;">Volume & OI</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>24H Volume : </span>
+              <span>{{ getTotalVolume() | numberFormatter }}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>{{ getTotalOpenInterest() | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card mt-3" style="border: 0.5px solid #45f3ff">
+      <div class="card-header" style="text-align: center; color: white; font-weight: bold; font-size: 13px;">
+        Global Perpetual Swaps
+        <div style="float: right;">
+          <button class="btn btn-primary btn-sm float-right" (click)="toggleFilterForm()">+</button>
+        </div>
+        <div style="float: left;">
+          <select [(ngModel)]="mode" class="form-control form-control-sm">
+            <option value="USD" selected>USD</option>
+            <option value="Notional">Notional</option>
+          </select>
+
+
+        </div>
+      </div>
+
+      <app-perpetuals-filter *ngIf="showFilterForm" [perpetuals]="perpetuals" (filterApplied)="applyAdvancedFilter($event)"></app-perpetuals-filter>
+
+      <div class="table-wrapper">
+        <table class="table table-dark table-striped" style="text-align: center">
+
+          <thead>
+            <tr>
+              <th rowspan="2" (click)="sortTable('currency.value')">Ticker{{ getSortingIndicator('currency.value') }}</th>
+              <th rowspan="2" (click)="sortTable('market_cap.value')">Market Cap{{ getSortingIndicator('market_cap.value') }}</th>
+              <th rowspan="2" (click)="sortTable('price.value')">Price{{ getSortingIndicator('price.value') }}</th>
+              <th rowspan="2" (click)="sortTable('change.value')">Change{{ getSortingIndicator('change.value') }}</th>
+              <th rowspan="2" (click)="sortTable('funding.value')">Funding{{ getSortingIndicator('funding.value') }}</th>
+              <th rowspan="2" (click)="sortTable('yield.value')">APR{{ getSortingIndicator('yield.value') }}</th>
+              <th rowspan="2" (click)="sortTable('avg_yield.value.7')">1W Avg. APR{{ getSortingIndicator('avg_yield.value.7') }}</th>
+              <th rowspan="2" (click)="sortTable('next_fr.value')">Next Funding{{ getSortingIndicator('next_fr.value') }}</th>
+
+              <th rowspan="2" (click)="sortTable('volume.value')" *ngIf="mode === 'USD'">
+                24h Volume{{ getSortingIndicator('volume.value') }}
+              </th>
+              <th rowspan="2" (click)="sortTable('volume.notional')" *ngIf="mode === 'Notional'">
+                24h Volume{{ getSortingIndicator('volume.notional') }}
+              </th>
+
+              <th rowspan="2" (click)="sortTable('volume.change_notional_percentage')" *ngIf="mode === 'Notional'">
+                Chg%{{ getSortingIndicator('volume.change_notional_percentage') }}
+              </th>
+
+
+              <th rowspan="2" (click)="sortTable('open_interest.value')" *ngIf="mode === 'USD'">
+                Open Interest{{ getSortingIndicator('open_interest.value') }}
+              </th>
+              <th rowspan="2" (click)="sortTable('open_interest.notional')" *ngIf="mode === 'Notional'">
+                Open Interest{{ getSortingIndicator('open_interest.notional') }}
+              </th>
+
+
+              <th rowspan="2" (click)="sortTable('open_interest.change_usd')" *ngIf="mode === 'USD'">
+                OI Change{{ getSortingIndicator('open_interest.change_usd') }}
+              </th>
+              <th rowspan="2" (click)="sortTable('open_interest.change_notional')" *ngIf="mode === 'Notional'">
+                OI Change{{ getSortingIndicator('open_interest.change_notional') }}
+              </th>
+
+
+              <th rowspan="2" (click)="sortTable('open_interest.change_usd_percentage')" *ngIf="mode === 'USD'">
+                Chg%{{ getSortingIndicator('open_interest.change_usd_percentage') }}
+              </th>
+              <th rowspan="2" (click)="sortTable('open_interest.change_notional_percentage')" *ngIf="mode === 'Notional'">
+                Chg%{{ getSortingIndicator('open_interest.change_notional_percentage') }}
+              </th>
+
+              <th rowspan="2" (click)="sortTable('open_interest_volume.value')">OI/24h Volume{{ getSortingIndicator('open_interest_volume.value') }}</th>
+
+
+              <th rowspan="2" (click)="sortTable('realized_vol.value.30')">1M RV{{ getSortingIndicator('realized_vol.value.30') }}</th>
+              <th colspan="2">24h Liquidations</th>
+              <th rowspan="2" (click)="sortTable('ls_ratio.value')">Long/Short Ratio{{ getSortingIndicator('ls_ratio.value') }}</th>
+              <th colspan="2">1W Correlation</th>
+            </tr>
+            <tr>
+              <th (click)="sortTable('liquidations.value.short')">Short{{ getSortingIndicator('liquidations.value.short') }}</th>
+              <th (click)="sortTable('liquidations.value.long')">Long{{ getSortingIndicator('liquidations.value.long') }}</th>
+              <th (click)="sortTable('correlation.value.btc.7')">BTC{{ getSortingIndicator('correlation.value.btc.7') }}</th>
+              <th (click)="sortTable('correlation.value.eth.7')">ETH{{ getSortingIndicator('correlation.value.eth.7') }}</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr *ngFor="let perpetual of perpetuals | paginate: { itemsPerPage: pageSize, currentPage: currentPage }">
+              <td>{{ perpetual.currency.value }}</td>
+              <td>{{ perpetual.market_cap.value !== undefined && perpetual.market_cap.value !== 0 ? (perpetual.market_cap.value | numberFormatter) : '-' }}</td>
+              <td>${{ perpetual.price.value !== undefined && perpetual.price.value !== 0 ? (perpetual.price.value | numberFormatter) : '-' }}</td>
+              <td>{{ perpetual.change.value !== undefined && perpetual.change.value !== 0 ? perpetual.change.value + '%' : '-' }}</td>
+              <td [style.background-color]="getGradientColor(perpetual.funding.intensity)">{{ perpetual.funding.value !== undefined && perpetual.funding.value !== 0 ? perpetual.funding.value + '%' : '-' }}</td>
+              <td>{{ perpetual.yield.value !== undefined && perpetual.yield.value !== 0 ? (perpetual.yield.value | numberFormatter) + '%' : '-' }}</td>
+              <td>{{ perpetual.avg_yield.value['7'] !== undefined ? perpetual.avg_yield.value['7'].toFixed(2) + '%' : '-' }}</td>
+             <td [style.background-color]="getGradientColor(perpetual.next_fr.intensity)">{{ perpetual.next_fr.value !== undefined && perpetual.next_fr.value !== 0 ? perpetual.next_fr.value + '%' : '-' }}</td>
+              <td *ngIf="mode === 'USD'">${{ perpetual.volume.value !== undefined && perpetual.volume.value !== 0 ? (perpetual.volume.value | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'Notional'">${{ perpetual.volume.notional !== undefined && perpetual.volume.notional !== 0 ? (perpetual.volume.notional | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'USD'">{{ perpetual.volume.change_usd_percentage !== undefined && perpetual.volume.change_usd_percentage !== 0 ? (perpetual.volume.change_usd_percentage | numberFormatter) + '%' : '-' }}</td>
+              <td *ngIf="mode === 'Notional'">{{ perpetual.volume.change_notional_percentage !== undefined && perpetual.volume.change_notional_percentage !== 0 ? (perpetual.volume.change_notional_percentage | numberFormatter) + '%' : '-' }}</td>
+              <td *ngIf="mode === 'USD'">${{ perpetual.open_interest.value !== undefined && perpetual.open_interest.value !== 0 ? (perpetual.open_interest.value | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'Notional'">${{ perpetual.open_interest.notional !== undefined && perpetual.open_interest.notional !== 0 ? (perpetual.open_interest.notional | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'USD'">${{ perpetual.open_interest.change_usd !== undefined && perpetual.open_interest.change_usd !== 0 ? (perpetual.open_interest.change_usd | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'Notional'">${{ perpetual.open_interest.change_notional !== undefined && perpetual.open_interest.change_notional !== 0 ? (perpetual.open_interest.change_notional | numberFormatter) : '-' }}</td>
+              <td *ngIf="mode === 'USD'">{{ perpetual.open_interest.change_usd_percentage !== undefined && perpetual.open_interest.change_usd_percentage !== 0 ? (perpetual.open_interest.change_usd_percentage | numberFormatter) + '%' : '-' }}</td>
+              <td *ngIf="mode === 'Notional'">{{ perpetual.open_interest.change_notional_percentage !== undefined && perpetual.open_interest.change_notional_percentage !== 0 ? (perpetual.open_interest.change_notional_percentage | numberFormatter) + '%' : '-' }}</td>
+              <td>{{ perpetual.open_interest_volume.value !== undefined && perpetual.open_interest_volume.value !== 0 ? (perpetual.open_interest_volume.value | numberFormatter) : '-' }}</td>
+
+              <td>{{ perpetual.realized_vol.value['30'] !== undefined ? perpetual.realized_vol.value['30'] + '%' : '-' }}</td>
+              <td style="color: green;">{{ perpetual.liquidations.value.short !== undefined && perpetual.liquidations.value.short !== 0 ? (perpetual.liquidations.value.short | numberFormatter) : '-' }}</td>
+              <td style="color: red;">{{ perpetual.liquidations.value.long !== undefined && perpetual.liquidations.value.long !== 0 ? (perpetual.liquidations.value.long | numberFormatter) : '-' }}</td>
+              <td>{{ perpetual.ls_ratio.value !== undefined && perpetual.ls_ratio.value !== null && perpetual.ls_ratio.value !== 0 ? perpetual.ls_ratio.value : '-' }}</td>
+              <td>{{ perpetual.correlation.value.btc['7'] !== null && perpetual.correlation.value.btc['7'] !== 0 ? perpetual.correlation.value.btc['7'].toFixed(2) : '-' }}</td>
+              <td>{{ perpetual.correlation.value.eth['7'] !== null && perpetual.correlation.value.eth['7'] !== 0 ? perpetual.correlation.value.eth['7'].toFixed(2) : '-' }}</td>
+            </tr>
+          </tbody>
+
+        </table>
+        <div class="pagination-controls">
+          <pagination-controls (pageChange)="pageChanged($event)" previousLabel="" nextLabel=""></pagination-controls>
+        </div>
+      </div>
+    </div>
+  </div>
+</body> -->
+
+
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+          <h6><i class="bi bi-bar-chart"></i> Volume & OI</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>24H Volume : </span>
+              <span> ${{ getTotalVolume() | numberFormatter}}</span>
+              <br>
+              <span>Open Interest : </span>
+              <span>${{ getTotalOpenInterest()| numberFormatter }}</span>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+          <h6 ><i class="bi bi-graph-up"></i> Highest Volume Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+           <span>{{ getHighestVolumeTicker().ticker }}</span>
+              <br>
+              <span>Volume : </span>
+        <span>${{ getHighestVolumeTicker().volume | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="col-md-4">
+        <div class="card">
+          <div class="card-title" style="color: rgb(33, 177, 187);font-weight: bold;">
+
+        <h6><i class="bi bi-journal-text"></i> Highest OI Ticker</h6>
+          </div>
+          <div class="stats-widget">
+            <div>
+              <span>Ticker : </span>
+            <span>{{ getHighestOpenInterestTicker().ticker }}</span>
+              <br>
+              <span>Open Interest : </span>
+               <span>${{ getHighestOpenInterestTicker().openInterest | numberFormatter }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+<div class="card mt-3" style="border: 0.5px solid #45f3ff">
+  <div class="card-header" style="text-align: center; color: white; font-weight: bold; font-size: 13px;">
+  Global Perpetual Swaps
+  <div style="float: right;">
+    <button class="btn btn-primary btn-sm float-right" (click)="toggleFilterForm()">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+        <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"/>
+      </svg>
+    </button>
+  </div>
+
+  <div class="row" style="float: left;">
+    <input type="text" [(ngModel)]="searchText" class="form-control form-control-sm" placeholder="Search by Ticker" (input)="filterByTicker()">
+  </div>
+</div>
+
+<app-perpetuals-filter *ngIf="showFilterForm" [perpetuals]="perpetuals" (filterApplied)="applyAdvancedFilter($event)"></app-perpetuals-filter>
+
+<div class="table-wrapper">
+
+  <table class="table table-dark table-striped" style="text-align: center">
+
+    <thead>
+      <tr>
+        <th rowspan="2" (click)="sortTable('currency.value')">Ticker{{ getSortingIndicator('currency.value') }}</th>
+        <th rowspan="2" (click)="sortTable('market_cap.value')">Market Cap{{ getSortingIndicator('market_cap.value') }}</th>
+        <th rowspan="2" (click)="sortTable('price.value')">Price{{ getSortingIndicator('price.value') }}</th>
+        <th rowspan="2" (click)="sortTable('change.value')">Change{{ getSortingIndicator('change.value') }}</th>
+        <th rowspan="2" (click)="sortTable('funding.value')">Funding{{ getSortingIndicator('funding.value') }}</th>
+        <th rowspan="2" (click)="sortTable('yield.value')">APR{{ getSortingIndicator('yield.value') }}</th>
+
+        <th rowspan="2" (click)="sortTable('next_fr.value')">Next Funding{{ getSortingIndicator('next_fr.value') }}</th>
+
+        <th rowspan="2" (click)="sortTable('volume.value')"> 24h Volume{{ getSortingIndicator('volume.value') }}</th>
+
+
+
+
+        <th rowspan="2" (click)="sortTable('open_interest.value')"> Open Interest{{ getSortingIndicator('open_interest.value') }}</th>
+
+
+        <th rowspan="2" (click)="sortTable('index_price.value')" >OI Change{{ getSortingIndicator('index_price.value') }}</th>
+
+
+        <th rowspan="2" (click)="sortTable('open_interest_volume.value')">OI/24h Volume{{ getSortingIndicator('open_interest_volume.value') }}</th>
+
+
+
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let perpetual of perpetuals | paginate: { itemsPerPage: pageSize, currentPage: currentPage }"(click)="navigateToDetail(perpetual.currency.value)">
+        <td>{{ perpetual.currency.value }}</td>
+        <td>{{ perpetual.market_cap.value !== undefined && perpetual.market_cap.value !== 0 ? (perpetual.market_cap.value | numberFormatter) : '-' }}</td>
+        <td>${{ perpetual.price.value !== undefined && perpetual.price.value !== 0 ? (perpetual.price.value | numberFormatter) : '-' }}</td>
+        <td>{{ perpetual.change.value !== undefined && perpetual.change.value !== 0 ? perpetual.change.value + '%' : '-' }}</td>
+        <td [style.background-color]="getGradientColor(perpetual.funding.intensity)">{{ perpetual.funding.value !== undefined && perpetual.funding.value !== 0 ? perpetual.funding.value + '%' : '-' }}</td>
+        <td>{{ perpetual.yield.value !== undefined && perpetual.yield.value !== 0 ? (perpetual.yield.value | numberFormatter) + '%' : '-' }}</td>
+
+       <td [style.background-color]="getGradientColor(perpetual.next_fr.intensity)">{{ perpetual.next_fr.value !== undefined && perpetual.next_fr.value !== 0 ? perpetual.next_fr.value + '%' : '-' }}</td>
+        <td [style.background-color]="getGradientColor(perpetual.volume.intensity)">${{ perpetual.volume.value !== undefined && perpetual.volume.value !== 0 ? (perpetual.volume.value | numberFormatter) : '-' }}</td>
+
+        <td [style.background-color]="getGradientColor(perpetual.open_interest.intensity)">${{ perpetual.open_interest.value !== undefined && perpetual.open_interest.value !== 0 ? (perpetual.open_interest.value | numberFormatter) : '-' }}</td>
+
+        <td >{{ perpetual.index_price.value !== undefined && perpetual.index_price.value !== 0 ? (perpetual.index_price.value| numberFormatter) + '$' : '-' }}</td>
+
+        <td [style.background-color]="getGradientColor(perpetual.open_interest_volume.intensity)">{{ perpetual.open_interest_volume.value !== undefined && perpetual.open_interest_volume.value !== 0 ? (perpetual.open_interest_volume.value | numberFormatter) : '-' }}</td>
+
+
+
+      </tr>
+    </tbody>
+
+  </table>
+  <div class="pagination-controls">
+    <pagination-controls (pageChange)="pageChanged($event)" previousLabel="" nextLabel=""></pagination-controls>
+  </div>
+</div>
+    </div>
+
+ </div>
+
+</body>

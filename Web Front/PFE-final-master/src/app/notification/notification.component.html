@@ -1,0 +1,59 @@
+
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <app-menu></app-menu>
+  <div class="main-container">
+    <div class="notifs-container">
+      <div class="card-title" style="color: white; text-align: center;">
+        <h6 style="font-weight: bold;">My Notifications</h6>
+      </div>
+      <div class="button-container">
+        <button type="button" (click)="markAllAsRead()" class="btn btn-success">
+          <i class="bi bi-eye"></i> Mark All as Read
+        </button>
+        <button type="button" (click)="deleteAllNotifications()" class="btn btn-danger">
+          <i class="bi bi-trash"></i> Delete All
+        </button>
+      </div>
+
+
+    <div class="notif-card" *ngFor="let notification of notifications" [ngClass]="{'new-notif': !notification.viewed}">
+      <div class="notif-details" (click)="toggleDetails(notification)">
+          <div class="notif-title">{{ notification.alertName }}</div>
+          <div class="notif-date">{{ notification.createdAt | date: 'dd/MM/yyyy hh:mm a' }}</div>
+          <div class="notif-condition">
+            {{ notification.message }} {{ getFieldDisplayName(notification.alertFieldName) }} {{ operatorMapping[notification.alertoperator] }} {{ notification.alertthreshold }}
+          </div>
+          <div class="notif-type">
+              Type: {{ notification.alertType  }}
+          </div>
+      </div>
+      <div class="notif-actions">
+          <button type="button" (click)="deleteNotification(notification.id)" class="btn delete-btn">
+              <i class="bi bi-trash"></i>
+          </button>
+      </div>
+      <div *ngIf="selectedNotification === notification" class="detailed-info">
+          <table class="table table-dark table-striped">
+              <thead>
+                  <tr>
+                      <th>Ticker</th>
+                      <th *ngFor="let field of getFieldsForAlert(notification.alertType)">{{ getDisplayName(field) }}</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let ticker of objectKeys(detailedTickers)">
+                      <td>{{ ticker }}</td>
+                      <td *ngFor="let field of getFieldsForAlert(notification.alertType)">{{ detailedTickers[ticker][0][field]  }}</td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+
+
+  </div>
+  </div>
+</body>

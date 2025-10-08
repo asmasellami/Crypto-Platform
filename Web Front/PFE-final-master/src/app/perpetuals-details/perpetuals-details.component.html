@@ -1,0 +1,56 @@
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="card mt-3">
+      <div class="card-header">
+        <h6 class="card-title" style="color: white; text-align: center;">Price History {{ currencyId }}</h6>
+      </div>
+      <div class="chart-container">
+        <canvas id="priceChart"></canvas>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+           <h6 class="card-title" style="color: white; text-align: center;">liquidations Short and Long {{ currencyId }}</h6>
+          </div>
+          <div class="card-body">
+            <canvas id="leqChart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+           <h6 class="card-title" style="color: white; text-align: center;">APR {{ currencyId }}</h6>
+          </div>
+          <div class="card-body">
+            <canvas id="yieldChart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-header">
+     <h6 class="card-title" style="color: white; text-align: center;">Volume {{ currencyId }}</h6>
+      </div>
+      <div class="chart-container">
+        <canvas id="volumeChart"></canvas>
+      </div>
+    </div>
+  </div>
+</body>

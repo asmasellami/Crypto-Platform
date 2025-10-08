@@ -1,0 +1,22 @@
+<app-menu></app-menu>
+<body>
+  <div class="chat-container">
+    <div class="card-header text-center">
+      <span>Chat With Traders Community</span>
+    </div>
+    <div class="message-list">
+        <div *ngIf="messages.length === 0" class="no-messages">No messages yet!</div>
+        <div *ngFor="let message of messages" class="message-item"
+            [ngClass]="{ 'sent': message.username === username, 'received': message.username !== username }">
+            <p><strong>{{ message.username }}</strong>: {{ message.content }} ({{ message.timestamp | date:'shortTime' }})</p>
+        </div>
+    </div>
+    <div class="message-form">
+        <form (ngSubmit)="sendMessage()">
+            <input type="text" [(ngModel)]="messageContent" name="messageContent" placeholder="Type a message..." required>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+

@@ -1,0 +1,104 @@
+/* Reset default styles and set the font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Remove underlines from links */
+a {
+  text-decoration: none;
+}
+
+/* Create a centered, dark-themed container */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #333;
+}
+
+.container {
+  width: 380px;
+  height: 280px;
+  background: #333;
+  box-shadow: 10px 20px 20px 0 rgba(0, 0, 0, 0.4), -10px 20px 20px 0 rgba(0, 0, 0, 0.4), 0 -2px 20px 0 rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #45f3ff;
+  border-radius: 20px;
+}
+
+/* Style the forms */
+.signin-signup {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Style the form */
+form {
+  grid-column: 1 / 2;
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Style form titles */
+.title {
+  font-size: 18px;
+  color: #45f3ff;
+  margin-bottom: 12px;
+}
+
+/* Style input fields */
+.input-field {
+  width: 280px;
+  height: 50px;
+  border-bottom: 2px solid #45f3ff;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.input-field input {
+  flex: 5;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 12px;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* Style buttons */
+.btn {
+  width: 130px;
+  height: 40px;
+  background: none;
+  outline: none;
+  border: 2px solid  #45f3ff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 20px 0;
+  color: #999;
+}
+
+.btn:hover {
+  color: #333;
+  border: none;
+  background: #45f3ff;
+}
+
+/* Adjust container styles for smaller screens */
+@media (max-width: 400px) {
+  .container {
+      width: 100vw;
+      height: 100vh;
+  }
+}

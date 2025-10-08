@@ -1,0 +1,56 @@
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="card mt-3">
+      <h6 style="color: white;text-align: center;">Price History {{ tickerId }}</h6>
+      <div class="chart-container">
+        <canvas id="priceChart"></canvas>
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h6 style="color: white;text-align: center;">  Basis History {{ tickerId }} </h6>
+          </div>
+          <div class="card-body">
+            <canvas id="basisChart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h6 style="color: white; text-align: center;"> Yield History {{ tickerId }} </h6>
+          </div>
+          <div class="card-body">
+            <canvas id="yieldChart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <h6 style="color: white;text-align: center;">Open Interest History {{ tickerId }}</h6>
+      <div class="chart-container">
+        <canvas id="oiChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+

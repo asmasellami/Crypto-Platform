@@ -1,0 +1,83 @@
+
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <div class="container">
+
+    <form [formGroup]="myForm" class="sign-up-form">
+      <h2 class="title">SIGN UP</h2>
+
+     <!--  <div class="alert alert-danger" *ngIf="err">
+        <strong>{{err}}</strong>
+      </div> -->
+
+      <div class="form-group">
+        <i class="fas fa-user"></i>
+
+        <input type="text" name="username" class="formcontrol" formControlName="username" [(ngModel)]="user.username" placeholder="Username">
+      </div>
+      <span *ngIf="myForm.controls['username'].hasError('required')&&myForm.controls['username'].touched"
+        class="text-danger" >
+        Username is required </span>
+
+      <div class="form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="text" name="email" class="form-control" formControlName="email" [(ngModel)]="user.email" placeholder="Email">
+      </div>
+      <span *ngIf="myForm.controls['email'].hasError('required')&&
+    myForm.controls['email'].touched" class="text-danger">
+        Email is required
+      </span>
+      <span *ngIf="myForm.controls['email'].hasError('email')&&
+    myForm.controls['email'].touched" class="text-danger">
+        Email not valid
+      </span>
+      <div class="form-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" formControlName="password" [(ngModel)]="user.password"
+          class="form-control" placeholder="Password">
+      </div>
+      <span *ngIf="myForm.controls['password'].hasError('required')&&
+myForm.controls['password'].touched" class="text-danger">
+       Password is required
+      </span>
+      <span *ngIf="myForm.controls['password'].hasError('minlength')&&
+myForm.controls['password'].touched" class="text-danger">
+Your password must contain at least 6 characters
+
+      </span>
+      <div class="form-group">
+        <i class="fas fa-lock"></i>
+        <input type="password" name="confirmPassword" formControlName="confirmPassword" class="form-control" placeholder="Confirm Password">
+      </div>
+      <span *ngIf="myForm.controls['confirmPassword'].hasError('required')&&
+myForm.controls['confirmPassword'].touched" class="text-danger">
+        Confirm Password is required
+      </span>
+      <div>
+        <span *ngIf="myForm.get('confirmPassword')?.touched &&
+myForm.get('confirmPassword')?.value != myForm.get('password')?.value" class="text-danger">
+         Confirmed password does not match typed password
+        </span>
+      </div>
+      <input type="submit" [disabled]="myForm.invalid || loading" (click)="onRegister()" value="Sign up" class="btn">
+      <div *ngIf="loading" class="spinner-border spinner-border-sm text-white" role="status">
+          <span class="sr-only">Loading...</span>
+      </div>
+      <span *ngIf="!loading">Sign up</span>
+
+      <p>Already have an account? <a routerLink="/login" class="account-text" id="sign-in-link">Sign in</a></p>
+
+    </form>
+
+
+  </div>
+</body>
+
+</html>

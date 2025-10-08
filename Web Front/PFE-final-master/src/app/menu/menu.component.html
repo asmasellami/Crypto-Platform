@@ -1,0 +1,105 @@
+<head>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg " style="background-color: black;  border: 0.1px solid #45f3ff;">
+
+    <span class="nav-link">BTC:{{ btcPrice | currency:'USD':'symbol':'1.2-2' }}</span>
+    <span class="nav-link">ETH:{{ ethPrice | currency:'USD':'symbol':'1.2-2' }}</span>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/alert">Alert</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/notification" (click)="markAsViewed()">
+            <i class="fas fa-bell"></i>
+            <span *ngIf="unreadCount > 0" class="badge badge-danger">{{ unreadCount }}</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/chat">
+            <i class="fas fa-comments"></i> Live Chat!
+          </a>
+        </li>
+
+      </ul>
+
+      <ul class="navbar-nav ml-auto">
+      <!--   <div class="current-time">
+          <button class="btn btn-outline-light ml-2" type="button">{{ currentTime }}</button>
+        </div> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill"
+              viewBox="0 0 16 16" style="color: white;">
+              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+          </a>
+          <div class="dropdown-menu" style="background-color: black;">
+            <a class="dropdown-item"  routerLink="/profile">{{authService.loggedUser}}</a>
+            <a *ngIf="!authService.isloggedIn" class="dropdown-item" routerLink="/login">login</a>
+            <a *ngIf="authService.isloggedIn" class="dropdown-item" (click)="onLogout()">logout</a>
+            <a  class="dropdown-item" routerLink="/updateDetails">Settings</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="sidebar">
+
+    <ul>
+      <li *ngIf="authService.isAdmin()" [class.active]="isDashboardActive()"><a routerLink="/dashboard">Dashboard</a>
+      </li>
+      <li><a routerLink="/perpetuals">Perpetual Swaps</a></li>
+      <li><a routerLink="/futures">Futures</a></li>
+      <li><a routerLink="/options">Options</a></li>
+  <!--  <li><a routerLink="/chatbot">AskMe!!</a></li> -->
+    </ul>
+  </div>
+
+  <div class="container">
+
+  </div>
+</body>
+
+
+<script>
+  (function ($) { // Begin jQuery
+    $(function () { // DOM ready
+      // If a link has a dropdown, add sub menu toggle.
+      $('nav ul li a:not(:only-child)').click(function (e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        // Close one dropdown when selecting another
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      // Clicking away from dropdown will remove the dropdown class
+      $('html').click(function () {
+        $('.nav-dropdown').hide();
+      });
+      // Toggle open and close nav styles on click
+      $('#nav-toggle').click(function () {
+        $('nav ul').slideToggle();
+      });
+      // Hamburger to X toggle
+      $('#nav-toggle').on('click', function () {
+        this.classList.toggle('active');
+      });
+    }); // end DOM ready
+  })(jQuery); // end jQuery
+
+</script>

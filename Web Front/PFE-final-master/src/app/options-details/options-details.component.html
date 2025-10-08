@@ -1,0 +1,56 @@
+<body>
+  <app-menu></app-menu>
+
+  <div *ngIf="isLoading" class="full-page-loader">
+    <div class="center-content">
+      <div class="loader" id="loader"></div>
+      <div class="loader" id="loader2"></div>
+      <div class="loader" id="loader3"></div>
+      <div class="loader" id="loader4"></div>
+      <span id="text">LOADING...</span>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="card mt-3">
+      <div class="card-header">
+        <h6 class="card-title" style="color: white; text-align: center;">Price History {{ tickerId }}</h6>
+      </div>
+      <div class="chart-container">
+        <canvas id="upChart"></canvas>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="card-title" style="color: white; text-align: center;">25 Delta Risk Reversal and Butterfly {{ tickerId }}</h6>
+          </div>
+          <div class="card-body">
+            <canvas id="d25Chart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h6 class="card-title" style="color: white; text-align: center;">Basis {{ tickerId }}</h6>
+          </div>
+          <div class="card-body">
+            <canvas id="basisChart" width="50" height="20"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card mt-3">
+      <div class="card-header">
+        <h6 class="card-title" style="color: white; text-align: center;">ATM VOL {{ tickerId }}</h6>
+      </div>
+      <div class="chart-container">
+        <canvas id="atmVolChart"></canvas>
+      </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,4092 @@
+{
+    "options" :
+[
+    {
+      "ticker": {
+        "value": "BTC-19FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "19/02/24"
+      },
+      "underlying_price": {
+        "value": 52251.9
+      },
+      "change": {
+        "value": 0.6431
+      },
+      "open_interest": {
+        "value": 13613396.5,
+        "intensity": 0,
+        "notional": 260.534,
+        "change_usd_percentage": -91.107,
+        "change_usd": -139460868.4,
+        "change_notional": -2687.851,
+        "change_notional_percentage": -91.163
+      },
+      "volume": {
+        "value": 35350448.2,
+        "intensity": 0.13,
+        "notional": 676.539,
+        "change_usd_percentage": -81.015,
+        "change_usd": -150855341.6,
+        "change_notional": -2909.997,
+        "change_notional_percentage": -81.137
+      },
+      "atm_vol": {
+        "value": 38.49,
+        "change": -2.5313,
+        "intensity": 0.33
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.04258,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.47,
+        "change": -1.759,
+        "intensity": 0.15
+      },
+      "_25_delta_butterfly": {
+        "value": -0.51,
+        "change": -1.4695,
+        "intensity": -0.02
+      },
+      "open_interest_volume": {
+        "value": 0.385,
+        "change": -53.16
+      },
+      "market": {
+        "value": ["DELTA_EXCHANGE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-20FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "20/02/24"
+      },
+      "underlying_price": {
+        "value": 52243.617
+      },
+      "change": {
+        "value": 0.5782
+      },
+      "open_interest": {
+        "value": 157410492.8,
+        "intensity": 0.03,
+        "notional": 3013.009,
+        "change_usd_percentage": 148.882,
+        "change_usd": 94163439.2,
+        "change_notional": 1795.391,
+        "change_notional_percentage": 147.451
+      },
+      "volume": {
+        "value": 171200462.2,
+        "intensity": 0.63,
+        "notional": 3276.964,
+        "change_usd_percentage": 56.744,
+        "change_usd": 61977518.5,
+        "change_notional": 1174.229,
+        "change_notional_percentage": 55.843
+      },
+      "atm_vol": {
+        "value": 42.475,
+        "change": -0.979,
+        "intensity": 0.37
+      },
+      "basis": {
+        "value": 0.04172,
+        "change": -0.05136,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 1.9272,
+        "change": -0.3786,
+        "intensity": 0.08
+      },
+      "_25_delta_butterfly": {
+        "value": 0.8009,
+        "change": 0.06285,
+        "intensity": 0.03
+      },
+      "open_interest_volume": {
+        "value": 0.919,
+        "change": 58.78
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-21FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "21/02/24"
+      },
+      "underlying_price": {
+        "value": 52257.167
+      },
+      "change": {
+        "value": 0.5464
+      },
+      "open_interest": {
+        "value": 41694179.5,
+        "intensity": 0.01,
+        "notional": 797.865,
+        "change_usd_percentage": 1946.414,
+        "change_usd": 39656752.6,
+        "change_notional": 758.664,
+        "change_notional_percentage": 1935.293
+      },
+      "volume": {
+        "value": 50856511.5,
+        "intensity": 0.19,
+        "notional": 973.197,
+        "change_usd_percentage": 2383.464,
+        "change_usd": 48808705.9,
+        "change_notional": 933.796,
+        "change_notional_percentage": 2369.968
+      },
+      "atm_vol": {
+        "value": 48.1,
+        "change": 1.4725,
+        "intensity": 0.42
+      },
+      "basis": {
+        "value": 0.09523,
+        "change": -0.05422,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 2.6029,
+        "change": -1.5939,
+        "intensity": 0.11
+      },
+      "_25_delta_butterfly": {
+        "value": 1.3232,
+        "change": 0.312,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 0.82,
+        "change": -17.6
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-22FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "22/02/24"
+      },
+      "underlying_price": {
+        "value": 52277.682
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 5024419,
+        "intensity": 0,
+        "notional": 96,
+        "change_usd_percentage": 0,
+        "change_usd": 0,
+        "change_notional_percentage": 0,
+        "change_notional": 0
+      },
+      "volume": {
+        "value": 5068853.1,
+        "intensity": 0.02,
+        "notional": 96.96,
+        "change_usd_percentage": 0,
+        "change_usd": 0,
+        "change_notional_percentage": 0,
+        "change_notional": 0
+      },
+      "atm_vol": {
+        "value": 50.796
+      },
+      "basis": {
+        "value": 0.1458
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.9472
+      },
+      "_25_delta_butterfly": {
+        "value": 0.7618
+      },
+      "open_interest_volume": {
+        "value": 0.9912,
+        "change": 0
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-23FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 52302.082
+      },
+      "change": {
+        "value": 0.5328
+      },
+      "open_interest": {
+        "value": 4359333327.1,
+        "intensity": 0.83,
+        "notional": 83349.135,
+        "change_usd_percentage": 1.5167,
+        "change_usd": 65131609.6,
+        "change_notional": 807.822,
+        "change_notional_percentage": 0.9787
+      },
+      "volume": {
+        "value": 156098109.6,
+        "intensity": 0.57,
+        "notional": 2984.549,
+        "change_usd_percentage": -1.2526,
+        "change_usd": -1980007.1,
+        "change_notional": -53.962,
+        "change_notional_percentage": -1.7759
+      },
+      "atm_vol": {
+        "value": 52.291,
+        "change": 1.4902,
+        "intensity": 0.45
+      },
+      "basis": {
+        "value": 0.1996,
+        "change": -0.05208,
+        "intensity": 0.02
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.5531,
+        "change": 1.3237,
+        "intensity": 0.15
+      },
+      "_25_delta_butterfly": {
+        "value": 0.7379,
+        "change": -0.1324,
+        "intensity": 0.03
+      },
+      "open_interest_volume": {
+        "value": 27.93,
+        "change": 2.804
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-1MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 52464.057
+      },
+      "change": {
+        "value": 0.5834
+      },
+      "open_interest": {
+        "value": 814833266.2,
+        "intensity": 0.15,
+        "notional": 15531.267,
+        "change_usd_percentage": 7.0113,
+        "change_usd": 53387105.8,
+        "change_notional": 932.922,
+        "change_notional_percentage": 6.3906
+      },
+      "volume": {
+        "value": 99045534.3,
+        "intensity": 0.36,
+        "notional": 1887.874,
+        "change_usd_percentage": 36.272,
+        "change_usd": 26363219.6,
+        "change_notional": 494.418,
+        "change_notional_percentage": 35.481
+      },
+      "atm_vol": {
+        "value": 53.157,
+        "change": 0.4838,
+        "intensity": 0.46
+      },
+      "basis": {
+        "value": 0.5056,
+        "change": -0.00516,
+        "intensity": 0.05
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.7486,
+        "change": 0.4643,
+        "intensity": 0.16
+      },
+      "_25_delta_butterfly": {
+        "value": 1.1367,
+        "change": -0.2171,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 8.227,
+        "change": -21.47
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-8MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "underlying_price": {
+        "value": 52611.278
+      },
+      "change": {
+        "value": 0.6071
+      },
+      "open_interest": {
+        "value": 198356816.2,
+        "intensity": 0.04,
+        "notional": 3770.234,
+        "change_usd_percentage": 20.757,
+        "change_usd": 34095720.6,
+        "change_notional": 629.114,
+        "change_notional_percentage": 20.028
+      },
+      "volume": {
+        "value": 50954132.2,
+        "intensity": 0.19,
+        "notional": 968.502,
+        "change_usd_percentage": -11.037,
+        "change_usd": -6321778.8,
+        "change_notional": -126.77,
+        "change_notional_percentage": -11.574
+      },
+      "atm_vol": {
+        "value": 53.965,
+        "change": 1.5822,
+        "intensity": 0.47
+      },
+      "basis": {
+        "value": 0.7878,
+        "change": 0.01791,
+        "intensity": 0.07
+      },
+      "_25_delta_risk_reversal": {
+        "value": 4.8783,
+        "change": 0.554,
+        "intensity": 0.21
+      },
+      "_25_delta_butterfly": {
+        "value": 0.9354,
+        "change": -0.02139,
+        "intensity": 0.04
+      },
+      "open_interest_volume": {
+        "value": 3.893,
+        "change": 35.74
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-29MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 53055.993
+      },
+      "change": {
+        "value": 0.6193
+      },
+      "open_interest": {
+        "value": 5279633050.2,
+        "intensity": 1,
+        "notional": 99510.587,
+        "change_usd_percentage": 1.7874,
+        "change_usd": 92713426.3,
+        "change_notional": 1142.031,
+        "change_notional_percentage": 1.161
+      },
+      "volume": {
+        "value": 157968535.7,
+        "intensity": 0.58,
+        "notional": 2977.393,
+        "change_usd_percentage": 92.107,
+        "change_usd": 75739152.7,
+        "change_notional": 1417.934,
+        "change_notional_percentage": 90.925
+      },
+      "atm_vol": {
+        "value": 54.99,
+        "change": -0.5487,
+        "intensity": 0.48
+      },
+      "basis": {
+        "value": 1.6516,
+        "change": 0.04237,
+        "intensity": 0.15
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.228,
+        "change": 0.05351,
+        "intensity": 0.23
+      },
+      "_25_delta_butterfly": {
+        "value": 1.1074,
+        "change": 0.3187,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 33.42,
+        "change": -47.02
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-26APR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "26/04/24"
+      },
+      "underlying_price": {
+        "value": 53615.974
+      },
+      "change": {
+        "value": 0.7015
+      },
+      "open_interest": {
+        "value": 1529360796.7,
+        "intensity": 0.29,
+        "notional": 28524.35,
+        "change_usd_percentage": 1.47,
+        "change_usd": 22155564.9,
+        "change_notional": 216.015,
+        "change_notional_percentage": 0.7631
+      },
+      "volume": {
+        "value": 26322574.9,
+        "intensity": 0.1,
+        "notional": 490.947,
+        "change_usd_percentage": 7.2101,
+        "change_usd": 1770255.7,
+        "change_notional": 29.805,
+        "change_notional_percentage": 6.4633
+      },
+      "atm_vol": {
+        "value": 60.022,
+        "change": 0.1893,
+        "intensity": 0.52
+      },
+      "basis": {
+        "value": 2.7284,
+        "change": 0.1305,
+        "intensity": 0.26
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.6922,
+        "change": -0.01859,
+        "intensity": 0.33
+      },
+      "_25_delta_butterfly": {
+        "value": 1.5601,
+        "change": -0.2948,
+        "intensity": 0.06
+      },
+      "open_interest_volume": {
+        "value": 58.1,
+        "change": -5.354
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-31MAY24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "31/05/24"
+      },
+      "underlying_price": {
+        "value": 54538.39
+      },
+      "change": {
+        "value": 0.9825
+      },
+      "open_interest": {
+        "value": 12761932.2,
+        "intensity": 0,
+        "notional": 233.999,
+        "change_usd_percentage": 1.5527,
+        "change_usd": 195126.5,
+        "change_notional": 1.3139,
+        "change_notional_percentage": 0.5647
+      },
+      "volume": {
+        "value": 238956.2,
+        "intensity": 0,
+        "notional": 4.3814,
+        "change_usd_percentage": 84.879,
+        "change_usd": 109706.5,
+        "change_notional": 1.9883,
+        "change_notional_percentage": 83.081
+      },
+      "atm_vol": {
+        "value": 60.73,
+        "change": 0.38,
+        "intensity": 0.53
+      },
+      "basis": {
+        "value": 4.304,
+        "change": 0.258,
+        "intensity": 0.4
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.54,
+        "change": 0.22,
+        "intensity": 0.33
+      },
+      "_25_delta_butterfly": {
+        "value": 2.72,
+        "change": -0.1,
+        "intensity": 0.11
+      },
+      "open_interest_volume": {
+        "value": 53.41,
+        "change": -45.07
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-28JUN24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "underlying_price": {
+        "value": 54911.935
+      },
+      "change": {
+        "value": 0.8982
+      },
+      "open_interest": {
+        "value": 2676808183.5,
+        "intensity": 0.51,
+        "notional": 48747.293,
+        "change_usd_percentage": 0.5743,
+        "change_usd": 15285046.1,
+        "change_notional": -156.983,
+        "change_notional_percentage": -0.321
+      },
+      "volume": {
+        "value": 12662754.3,
+        "intensity": 0.05,
+        "notional": 230.601,
+        "change_usd_percentage": 68.437,
+        "change_usd": 5144963.2,
+        "change_notional": 92.465,
+        "change_notional_percentage": 66.938
+      },
+      "atm_vol": {
+        "value": 61.448,
+        "change": -0.5791,
+        "intensity": 0.53
+      },
+      "basis": {
+        "value": 5.2121,
+        "change": 0.3394,
+        "intensity": 0.49
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.7579,
+        "change": 1.4533,
+        "intensity": 0.34
+      },
+      "_25_delta_butterfly": {
+        "value": 2.2712,
+        "change": 0.7946,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 211.39,
+        "change": -40.29
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-27SEP24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "27/09/24"
+      },
+      "underlying_price": {
+        "value": 56519.101
+      },
+      "change": {
+        "value": 1.047
+      },
+      "open_interest": {
+        "value": 811528515.6,
+        "intensity": 0.15,
+        "notional": 14358.482,
+        "change_usd_percentage": 0.8055,
+        "change_usd": 6485024.3,
+        "change_notional": -34.389,
+        "change_notional_percentage": -0.2389
+      },
+      "volume": {
+        "value": 7072365.5,
+        "intensity": 0.03,
+        "notional": 125.132,
+        "change_usd_percentage": 107.239,
+        "change_usd": 3659705.3,
+        "change_notional": 64.12,
+        "change_notional_percentage": 105.092
+      },
+      "atm_vol": {
+        "value": 61.065,
+        "change": -0.5065,
+        "intensity": 0.53
+      },
+      "basis": {
+        "value": 8.2974,
+        "change": 0.516,
+        "intensity": 0.78
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.7097,
+        "change": 0.8275,
+        "intensity": 0.29
+      },
+      "_25_delta_butterfly": {
+        "value": 2.668,
+        "change": 0.3559,
+        "intensity": 0.11
+      },
+      "open_interest_volume": {
+        "value": 114.75,
+        "change": -51.36
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-27DEC24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "27/12/24"
+      },
+      "underlying_price": {
+        "value": 57765.318
+      },
+      "change": {
+        "value": 0.9906
+      },
+      "open_interest": {
+        "value": 490834246.4,
+        "intensity": 0.09,
+        "notional": 8497.04,
+        "change_usd_percentage": 1.3466,
+        "change_usd": 6521684.5,
+        "change_notional": 29.846,
+        "change_notional_percentage": 0.3525
+      },
+      "volume": {
+        "value": 8166008.7,
+        "intensity": 0.03,
+        "notional": 141.365,
+        "change_usd_percentage": 220.154,
+        "change_usd": 5615360.8,
+        "change_notional": 96.772,
+        "change_notional_percentage": 217.014
+      },
+      "atm_vol": {
+        "value": 61.176,
+        "change": 0.2588,
+        "intensity": 0.53
+      },
+      "basis": {
+        "value": 10.698,
+        "change": 0.4813,
+        "intensity": 1
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.7491,
+        "change": 0.2542,
+        "intensity": 0.29
+      },
+      "_25_delta_butterfly": {
+        "value": 2.7586,
+        "change": -0.6285,
+        "intensity": 0.11
+      },
+      "open_interest_volume": {
+        "value": 60.11,
+        "change": -68.34
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-19FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "19/02/24"
+      },
+      "underlying_price": {
+        "value": 2905.89
+      },
+      "change": {
+        "value": 3.2704
+      },
+      "open_interest": {
+        "value": 4495266.5,
+        "intensity": 0,
+        "notional": 1546.95,
+        "change_usd_percentage": -93.542,
+        "change_usd": -65117219.5,
+        "change_notional": -23192.148,
+        "change_notional_percentage": -93.747
+      },
+      "volume": {
+        "value": 4189799.4,
+        "intensity": 0.02,
+        "notional": 1441.83,
+        "change_usd_percentage": -92.41,
+        "change_usd": -51013908.8,
+        "change_notional": -18176.633,
+        "change_notional_percentage": -92.651
+      },
+      "atm_vol": {
+        "value": 49.39,
+        "change": 9.4185,
+        "intensity": 0.43
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.05633,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": -0.04,
+        "change": -10.062,
+        "intensity": 0
+      },
+      "_25_delta_butterfly": {
+        "value": -0.05,
+        "change": -1.1478,
+        "intensity": 0
+      },
+      "open_interest_volume": {
+        "value": 1.073,
+        "change": -14.92
+      },
+      "market": {
+        "value": ["DELTA_EXCHANGE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-20FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "20/02/24"
+      },
+      "underlying_price": {
+        "value": 2903.486
+      },
+      "change": {
+        "value": 3.1366
+      },
+      "open_interest": {
+        "value": 75329303.3,
+        "intensity": 0.01,
+        "notional": 25944.434,
+        "change_usd_percentage": 110.925,
+        "change_usd": 39615441.8,
+        "change_notional": 13258.29,
+        "change_notional_percentage": 104.51
+      },
+      "volume": {
+        "value": 58341190.3,
+        "intensity": 0.21,
+        "notional": 20093.497,
+        "change_usd_percentage": 68.019,
+        "change_usd": 23618320.3,
+        "change_notional": 7759.369,
+        "change_notional_percentage": 62.91
+      },
+      "atm_vol": {
+        "value": 54.139,
+        "change": 6.8625,
+        "intensity": 0.47
+      },
+      "basis": {
+        "value": 0.05544,
+        "change": -0.04977,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.2303,
+        "change": -5.2994,
+        "intensity": 0.27
+      },
+      "_25_delta_butterfly": {
+        "value": 2.0078,
+        "change": -0.002314,
+        "intensity": 0.08
+      },
+      "open_interest_volume": {
+        "value": 1.291,
+        "change": 25.54
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-21FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "21/02/24"
+      },
+      "underlying_price": {
+        "value": 2904.086
+      },
+      "change": {
+        "value": 3.0926
+      },
+      "open_interest": {
+        "value": 27402354.6,
+        "intensity": 0.01,
+        "notional": 9435.794,
+        "change_usd_percentage": 1115.286,
+        "change_usd": 25147548,
+        "change_notional": 8635.357,
+        "change_notional_percentage": 1078.83
+      },
+      "volume": {
+        "value": 31268899.3,
+        "intensity": 0.11,
+        "notional": 10767.21,
+        "change_usd_percentage": 1286.766,
+        "change_usd": 29014092.7,
+        "change_notional": 9966.772,
+        "change_notional_percentage": 1245.166
+      },
+      "atm_vol": {
+        "value": 59.046,
+        "change": 6.9994,
+        "intensity": 0.51
+      },
+      "basis": {
+        "value": 0.1152,
+        "change": -0.05881,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.4483,
+        "change": -3.017,
+        "intensity": 0.28
+      },
+      "_25_delta_butterfly": {
+        "value": 2.1971,
+        "change": 0.1564,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 0.876,
+        "change": -12.37
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-22FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "22/02/24"
+      },
+      "underlying_price": {
+        "value": 2904.322
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 2763595,
+        "intensity": 0,
+        "notional": 952,
+        "change_usd_percentage": 0,
+        "change_usd": 0,
+        "change_notional_percentage": 0,
+        "change_notional": 0
+      },
+      "volume": {
+        "value": 2770554.2,
+        "intensity": 0.01,
+        "notional": 953.942,
+        "change_usd_percentage": 0,
+        "change_usd": 0,
+        "change_notional_percentage": 0,
+        "change_notional": 0
+      },
+      "atm_vol": {
+        "value": 60.747
+      },
+      "basis": {
+        "value": 0.1668
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.1133
+      },
+      "_25_delta_butterfly": {
+        "value": 2.0818
+      },
+      "open_interest_volume": {
+        "value": 0.9975,
+        "change": 0
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-23FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 2905.237
+      },
+      "change": {
+        "value": 3.0157
+      },
+      "open_interest": {
+        "value": 2533622527.6,
+        "intensity": 0.48,
+        "notional": 872088.125,
+        "change_usd_percentage": 8.6203,
+        "change_usd": 201071908.9,
+        "change_notional": 44997.529,
+        "change_notional_percentage": 5.4405
+      },
+      "volume": {
+        "value": 273120778.2,
+        "intensity": 1,
+        "notional": 94009.816,
+        "change_usd_percentage": 212.934,
+        "change_usd": 185843229.8,
+        "change_notional": 63062.389,
+        "change_notional_percentage": 203.773
+      },
+      "atm_vol": {
+        "value": 61.739,
+        "change": 7.1951,
+        "intensity": 0.54
+      },
+      "basis": {
+        "value": 0.2205,
+        "change": -0.05779,
+        "intensity": 0.02
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.9853,
+        "change": -1.3994,
+        "intensity": 0.26
+      },
+      "_25_delta_butterfly": {
+        "value": 2.1193,
+        "change": -1.6979,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 9.277,
+        "change": -65.29
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-1MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 2916.192
+      },
+      "change": {
+        "value": 3.1734
+      },
+      "open_interest": {
+        "value": 366539273.2,
+        "intensity": 0.07,
+        "notional": 125691.077,
+        "change_usd_percentage": 18.623,
+        "change_usd": 57544571.9,
+        "change_notional": 16370.296,
+        "change_notional_percentage": 14.975
+      },
+      "volume": {
+        "value": 103462529.6,
+        "intensity": 0.38,
+        "notional": 35478.645,
+        "change_usd_percentage": 403.213,
+        "change_usd": 82902131.9,
+        "change_notional": 28204.479,
+        "change_notional_percentage": 387.735
+      },
+      "atm_vol": {
+        "value": 60.526,
+        "change": 5.1936,
+        "intensity": 0.52
+      },
+      "basis": {
+        "value": 0.5897,
+        "change": 0.08744,
+        "intensity": 0.06
+      },
+      "_25_delta_risk_reversal": {
+        "value": 4.701,
+        "change": 0.3292,
+        "intensity": 0.2
+      },
+      "_25_delta_butterfly": {
+        "value": 2.1074,
+        "change": 0.05922,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 3.543,
+        "change": -76.43
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-8MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "underlying_price": {
+        "value": 2923.015
+      },
+      "change": {
+        "value": 3.1963
+      },
+      "open_interest": {
+        "value": 109088091.7,
+        "intensity": 0.02,
+        "notional": 37320.397,
+        "change_usd_percentage": 28.144,
+        "change_usd": 23958543,
+        "change_notional": 7265.631,
+        "change_notional_percentage": 24.175
+      },
+      "volume": {
+        "value": 35488177.9,
+        "intensity": 0.13,
+        "notional": 12140.948,
+        "change_usd_percentage": 96.109,
+        "change_usd": 17392029.1,
+        "change_notional": 5752.15,
+        "change_notional_percentage": 90.035
+      },
+      "atm_vol": {
+        "value": 59.393,
+        "change": 4.2603,
+        "intensity": 0.52
+      },
+      "basis": {
+        "value": 0.83,
+        "change": 0.1149,
+        "intensity": 0.08
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.8701,
+        "change": -0.7847,
+        "intensity": 0.17
+      },
+      "_25_delta_butterfly": {
+        "value": 1.3751,
+        "change": 0.4369,
+        "intensity": 0.06
+      },
+      "open_interest_volume": {
+        "value": 3.074,
+        "change": -34.66
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-29MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 2941.66
+      },
+      "change": {
+        "value": 3.2033
+      },
+      "open_interest": {
+        "value": 3322689137.7,
+        "intensity": 0.63,
+        "notional": 1129528.646,
+        "change_usd_percentage": 4.1461,
+        "change_usd": 132276513.6,
+        "change_notional": 10224.413,
+        "change_notional_percentage": 0.9135
+      },
+      "volume": {
+        "value": 101791686,
+        "intensity": 0.37,
+        "notional": 34603.486,
+        "change_usd_percentage": 149.34,
+        "change_usd": 60967198.1,
+        "change_notional": 20280.88,
+        "change_notional_percentage": 141.601
+      },
+      "atm_vol": {
+        "value": 58.479,
+        "change": 1.2832,
+        "intensity": 0.51
+      },
+      "basis": {
+        "value": 1.4936,
+        "change": 0.1437,
+        "intensity": 0.14
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.3355,
+        "change": -0.5389,
+        "intensity": 0.27
+      },
+      "_25_delta_butterfly": {
+        "value": 2.2128,
+        "change": 1.0354,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 32.64,
+        "change": -58.23
+      },
+      "market": {
+        "value": [
+          "DELTA_EXCHANGE",
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-26APR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "26/04/24"
+      },
+      "underlying_price": {
+        "value": 2972.944
+      },
+      "change": {
+        "value": 3.2841
+      },
+      "open_interest": {
+        "value": 532891055.6,
+        "intensity": 0.1,
+        "notional": 179246.893,
+        "change_usd_percentage": 6.5075,
+        "change_usd": 32559128.1,
+        "change_notional": 5424.809,
+        "change_notional_percentage": 3.1209
+      },
+      "volume": {
+        "value": 36471619,
+        "intensity": 0.13,
+        "notional": 12267.844,
+        "change_usd_percentage": 337.586,
+        "change_usd": 28136891.2,
+        "change_notional": 9372.247,
+        "change_notional_percentage": 323.672
+      },
+      "atm_vol": {
+        "value": 61.989,
+        "change": 1.3197,
+        "intensity": 0.54
+      },
+      "basis": {
+        "value": 2.5684,
+        "change": 0.22,
+        "intensity": 0.24
+      },
+      "_25_delta_risk_reversal": {
+        "value": 8.0843,
+        "change": -0.07386,
+        "intensity": 0.35
+      },
+      "_25_delta_butterfly": {
+        "value": 2.396,
+        "change": 0.693,
+        "intensity": 0.1
+      },
+      "open_interest_volume": {
+        "value": 14.61,
+        "change": -75.66
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-31MAY24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "31/05/24"
+      },
+      "underlying_price": {
+        "value": 3024.92
+      },
+      "change": {
+        "value": 3.7762
+      },
+      "open_interest": {
+        "value": 4905885,
+        "intensity": 0,
+        "notional": 1621.823,
+        "change_usd_percentage": 4.381,
+        "change_usd": 205905.3,
+        "change_notional": 9.3971,
+        "change_notional_percentage": 0.5828
+      },
+      "volume": {
+        "value": 54972,
+        "intensity": 0,
+        "notional": 18.173,
+        "change_usd_percentage": 171.499,
+        "change_usd": 34724.4,
+        "change_notional": 11.227,
+        "change_notional_percentage": 161.62
+      },
+      "atm_vol": {
+        "value": 63.19,
+        "change": 1.07,
+        "intensity": 0.55
+      },
+      "basis": {
+        "value": 4,
+        "change": 0.349,
+        "intensity": 0.37
+      },
+      "_25_delta_risk_reversal": {
+        "value": 8.34,
+        "change": -0.13,
+        "intensity": 0.36
+      },
+      "_25_delta_butterfly": {
+        "value": 3.03,
+        "change": 0.02,
+        "intensity": 0.12
+      },
+      "open_interest_volume": {
+        "value": 89.24,
+        "change": -61.55
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-28JUN24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "underlying_price": {
+        "value": 3038.28
+      },
+      "change": {
+        "value": 3.4025
+      },
+      "open_interest": {
+        "value": 1121299790.5,
+        "intensity": 0.21,
+        "notional": 369057.406,
+        "change_usd_percentage": 3.5528,
+        "change_usd": 38471294.7,
+        "change_notional": 535.802,
+        "change_notional_percentage": 0.1454
+      },
+      "volume": {
+        "value": 13742012.5,
+        "intensity": 0.05,
+        "notional": 4522.958,
+        "change_usd_percentage": 46.273,
+        "change_usd": 4347249,
+        "change_notional": 1325.615,
+        "change_notional_percentage": 41.46
+      },
+      "atm_vol": {
+        "value": 63.381,
+        "change": 1.305,
+        "intensity": 0.55
+      },
+      "basis": {
+        "value": 4.8279,
+        "change": 0.3498,
+        "intensity": 0.45
+      },
+      "_25_delta_risk_reversal": {
+        "value": 9.1892,
+        "change": 2.1,
+        "intensity": 0.4
+      },
+      "_25_delta_butterfly": {
+        "value": 3.4539,
+        "change": 1.0416,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 81.6,
+        "change": -29.21
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "AEVO",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BIT",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-27SEP24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "27/09/24"
+      },
+      "underlying_price": {
+        "value": 3116.366
+      },
+      "change": {
+        "value": 3.3849
+      },
+      "open_interest": {
+        "value": 234723860.4,
+        "intensity": 0.04,
+        "notional": 75319.739,
+        "change_usd_percentage": 4.7372,
+        "change_usd": 10616427.4,
+        "change_notional": 972.466,
+        "change_notional_percentage": 1.308
+      },
+      "volume": {
+        "value": 5623417.8,
+        "intensity": 0.02,
+        "notional": 1804.479,
+        "change_usd_percentage": 376.424,
+        "change_usd": 4443079.6,
+        "change_notional": 1412.904,
+        "change_notional_percentage": 360.826
+      },
+      "atm_vol": {
+        "value": 63.663,
+        "change": -0.4138,
+        "intensity": 0.55
+      },
+      "basis": {
+        "value": 7.5159,
+        "change": 0.3352,
+        "intensity": 0.7
+      },
+      "_25_delta_risk_reversal": {
+        "value": 8.6333,
+        "change": 1.1003,
+        "intensity": 0.37
+      },
+      "_25_delta_butterfly": {
+        "value": 3.4803,
+        "change": 1.1054,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 41.74,
+        "change": -78.02
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-27DEC24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "27/12/24"
+      },
+      "underlying_price": {
+        "value": 3195.23
+      },
+      "change": {
+        "value": 3.4702
+      },
+      "open_interest": {
+        "value": 218818266.5,
+        "intensity": 0.04,
+        "notional": 68482.79,
+        "change_usd_percentage": 5.8364,
+        "change_usd": 12066785.1,
+        "change_notional": 1531.035,
+        "change_notional_percentage": 2.2868
+      },
+      "volume": {
+        "value": 7572899.3,
+        "intensity": 0.03,
+        "notional": 2370.064,
+        "change_usd_percentage": 1311.917,
+        "change_usd": 7036543.6,
+        "change_notional": 2196.377,
+        "change_notional_percentage": 1264.564
+      },
+      "atm_vol": {
+        "value": 64.061,
+        "change": 0.6543,
+        "intensity": 0.56
+      },
+      "basis": {
+        "value": 10.248,
+        "change": 0.4455,
+        "intensity": 0.96
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.8025,
+        "change": 0.121,
+        "intensity": 0.34
+      },
+      "_25_delta_butterfly": {
+        "value": 2.9328,
+        "change": -0.6445,
+        "intensity": 0.12
+      },
+      "open_interest_volume": {
+        "value": 28.89,
+        "change": -92.5
+      },
+      "market": {
+        "value": [
+          "DERIBIT",
+          "POWERTRADE",
+          "COINCALL",
+          "BINANCE",
+          "BYBIT",
+          "OKEX"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "KAS-23FEB24"
+      },
+      "currency": {
+        "value": "KAS"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 0.17
+      },
+      "change": {
+        "value": 6.25
+      },
+      "open_interest": {
+        "value": 8487875.2,
+        "intensity": 0,
+        "notional": 49928677.647,
+        "change_usd_percentage": 3.9669,
+        "change_usd": 323857.2,
+        "change_notional": -1096434.853,
+        "change_notional_percentage": -2.1488
+      },
+      "volume": {
+        "value": 176986.6,
+        "intensity": 0,
+        "notional": 1041097.647,
+        "change_usd_percentage": 130.044,
+        "change_usd": 100050.6,
+        "change_notional": 560247.647,
+        "change_notional_percentage": 116.512
+      },
+      "atm_vol": {
+        "value": 91.88,
+        "change": -15.64,
+        "intensity": 0.8
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.39,
+        "change": -7.04,
+        "intensity": 0.28
+      },
+      "_25_delta_butterfly": {
+        "value": 24.27,
+        "change": 18.29,
+        "intensity": 1
+      },
+      "open_interest_volume": {
+        "value": 47.96,
+        "change": -54.81
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "KAS-1MAR24"
+      },
+      "currency": {
+        "value": "KAS"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 0.17
+      },
+      "change": {
+        "value": 6.25
+      },
+      "open_interest": {
+        "value": 1124711.6,
+        "intensity": 0,
+        "notional": 6615950.588,
+        "change_usd_percentage": 21.472,
+        "change_usd": 198806.4,
+        "change_notional": 829043.088,
+        "change_notional_percentage": 14.326
+      },
+      "volume": {
+        "value": 297727.6,
+        "intensity": 0,
+        "notional": 1751338.823,
+        "change_usd_percentage": 75.209,
+        "change_usd": 127800.1,
+        "change_notional": 689291.949,
+        "change_notional_percentage": 64.902
+      },
+      "atm_vol": {
+        "value": 115.29,
+        "change": 8.43,
+        "intensity": 1
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.613,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": -3.49,
+        "change": -14.23,
+        "intensity": -0.15
+      },
+      "_25_delta_butterfly": {
+        "value": 8.5,
+        "change": 2.18,
+        "intensity": 0.35
+      },
+      "open_interest_volume": {
+        "value": 3.778,
+        "change": -30.67
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "KAS-29MAR24"
+      },
+      "currency": {
+        "value": "KAS"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 0.17
+      },
+      "change": {
+        "value": 6.25
+      },
+      "open_interest": {
+        "value": 3236242.9,
+        "intensity": 0,
+        "notional": 19036722.941,
+        "change_usd_percentage": 10.069,
+        "change_usd": 296048.9,
+        "change_notional": 660510.441,
+        "change_notional_percentage": 3.5944
+      },
+      "volume": {
+        "value": 435819.9,
+        "intensity": 0,
+        "notional": 2563646.471,
+        "change_usd_percentage": 158.682,
+        "change_usd": 267343.1,
+        "change_notional": 1510666.471,
+        "change_notional_percentage": 143.466
+      },
+      "atm_vol": {
+        "value": 107.18,
+        "change": -10.87,
+        "intensity": 0.93
+      },
+      "basis": {
+        "value": 0.599,
+        "change": -0.014,
+        "intensity": 0.06
+      },
+      "_25_delta_risk_reversal": {
+        "value": -2.65,
+        "change": -14.62,
+        "intensity": -0.11
+      },
+      "_25_delta_butterfly": {
+        "value": 21.64,
+        "change": 18.05,
+        "intensity": 0.89
+      },
+      "open_interest_volume": {
+        "value": 7.426,
+        "change": -57.45
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "FIL-23FEB24"
+      },
+      "currency": {
+        "value": "FIL"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 6.5491
+      },
+      "change": {
+        "value": 5.6298
+      },
+      "open_interest": {
+        "value": 5142343.2,
+        "intensity": 0,
+        "notional": 785204.528,
+        "change_usd_percentage": 7.3488,
+        "change_usd": 352029.9,
+        "change_notional": 12573.351,
+        "change_notional_percentage": 1.6273
+      },
+      "volume": {
+        "value": 111042.5,
+        "intensity": 0,
+        "notional": 16955.514,
+        "change_usd_percentage": 11.3,
+        "change_usd": 11274.1,
+        "change_notional": 863.837,
+        "change_notional_percentage": 5.3682
+      },
+      "atm_vol": {
+        "value": 99.925,
+        "change": 24.055,
+        "intensity": 0.87
+      },
+      "basis": {
+        "value": 0.04453,
+        "change": 0.01035,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.3297,
+        "change": 3.6067,
+        "intensity": 0.32
+      },
+      "_25_delta_butterfly": {
+        "value": -9.2822,
+        "change": -14.901,
+        "intensity": -0.38
+      },
+      "open_interest_volume": {
+        "value": 46.31,
+        "change": -3.55
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "FIL-1MAR24"
+      },
+      "currency": {
+        "value": "FIL"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 6.5497
+      },
+      "change": {
+        "value": 5.641
+      },
+      "open_interest": {
+        "value": 607450.8,
+        "intensity": 0,
+        "notional": 92744.234,
+        "change_usd_percentage": 30.237,
+        "change_usd": 141030.7,
+        "change_notional": 17515.185,
+        "change_notional_percentage": 23.282
+      },
+      "volume": {
+        "value": 244674.5,
+        "intensity": 0,
+        "notional": 37356.357,
+        "change_usd_percentage": 64.154,
+        "change_usd": 95622.8,
+        "change_notional": 13315.76,
+        "change_notional_percentage": 55.389
+      },
+      "atm_vol": {
+        "value": 76.903,
+        "change": -5.0799,
+        "intensity": 0.67
+      },
+      "basis": {
+        "value": 0.1287,
+        "change": 0.01567,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.4397,
+        "change": 1.0612,
+        "intensity": 0.28
+      },
+      "_25_delta_butterfly": {
+        "value": 13.96,
+        "change": 11.032,
+        "intensity": 0.58
+      },
+      "open_interest_volume": {
+        "value": 2.483,
+        "change": -20.66
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "FIL-29MAR24"
+      },
+      "currency": {
+        "value": "FIL"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 6.5687
+      },
+      "change": {
+        "value": 5.616
+      },
+      "open_interest": {
+        "value": 1994569.5,
+        "intensity": 0,
+        "notional": 303648.907,
+        "change_usd_percentage": 17.219,
+        "change_usd": 292993.6,
+        "change_notional": 30056.877,
+        "change_notional_percentage": 10.986
+      },
+      "volume": {
+        "value": 256537.7,
+        "intensity": 0,
+        "notional": 39054.74,
+        "change_usd_percentage": 29.222,
+        "change_usd": 58013,
+        "change_notional": 7134.462,
+        "change_notional_percentage": 22.351
+      },
+      "atm_vol": {
+        "value": 98.254,
+        "change": 2.1863,
+        "intensity": 0.85
+      },
+      "basis": {
+        "value": 0.392,
+        "change": -0.002623,
+        "intensity": 0.04
+      },
+      "_25_delta_risk_reversal": {
+        "value": 17.077,
+        "change": 1.5462,
+        "intensity": 0.74
+      },
+      "_25_delta_butterfly": {
+        "value": 5.1456,
+        "change": 4.2969,
+        "intensity": 0.21
+      },
+      "open_interest_volume": {
+        "value": 7.775,
+        "change": -9.289
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "SOL-23FEB24"
+      },
+      "currency": {
+        "value": "SOL"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 111.242
+      },
+      "change": {
+        "value": -1.1458
+      },
+      "open_interest": {
+        "value": 1395942.7,
+        "intensity": 0,
+        "notional": 12548.694,
+        "change_usd_percentage": 3.9824,
+        "change_usd": 53463.3,
+        "change_notional": 618.883,
+        "change_notional_percentage": 5.1877
+      },
+      "volume": {
+        "value": 81079.4,
+        "intensity": 0,
+        "notional": 728.856,
+        "change_usd_percentage": 223.193,
+        "change_usd": 55992.4,
+        "change_notional": 505.922,
+        "change_notional_percentage": 226.939
+      },
+      "atm_vol": {
+        "value": 89.257,
+        "change": 4.3096,
+        "intensity": 0.77
+      },
+      "basis": {
+        "value": 0.0343,
+        "change": -0.00125,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 23.097,
+        "change": 16.657,
+        "intensity": 1
+      },
+      "_25_delta_butterfly": {
+        "value": -4.7796,
+        "change": -7.5305,
+        "intensity": -0.2
+      },
+      "open_interest_volume": {
+        "value": 17.22,
+        "change": -67.83
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "SOL-1MAR24"
+      },
+      "currency": {
+        "value": "SOL"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 111.284
+      },
+      "change": {
+        "value": -1.1917
+      },
+      "open_interest": {
+        "value": 741640.1,
+        "intensity": 0,
+        "notional": 6664.373,
+        "change_usd_percentage": 26.173,
+        "change_usd": 153844.5,
+        "change_notional": 1445.392,
+        "change_notional_percentage": 27.695
+      },
+      "volume": {
+        "value": 187499.5,
+        "intensity": 0,
+        "notional": 1684.869,
+        "change_usd_percentage": 275.392,
+        "change_usd": 137551.9,
+        "change_notional": 1241.389,
+        "change_notional_percentage": 279.92
+      },
+      "atm_vol": {
+        "value": 94.302,
+        "change": 2.0091,
+        "intensity": 0.82
+      },
+      "basis": {
+        "value": 0.09939,
+        "change": -0.01572,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.524,
+        "change": -1.2344,
+        "intensity": 0.24
+      },
+      "_25_delta_butterfly": {
+        "value": 2.3508,
+        "change": -1.1718,
+        "intensity": 0.1
+      },
+      "open_interest_volume": {
+        "value": 3.955,
+        "change": -66.39
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "SOL-8MAR24"
+      },
+      "currency": {
+        "value": "SOL"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "underlying_price": {
+        "value": 110.88
+      },
+      "change": {
+        "value": -1.4925
+      },
+      "open_interest": {
+        "value": 60773.2,
+        "intensity": 0,
+        "notional": 548.099,
+        "change_usd_percentage": 6.3208,
+        "change_usd": 3613,
+        "change_notional": 40.279,
+        "change_notional_percentage": 7.9318
+      },
+      "volume": {
+        "value": 4768.7,
+        "intensity": 0,
+        "notional": 43.008,
+        "change_usd_percentage": 4138.844,
+        "change_usd": 4656.2,
+        "change_notional": 42.008,
+        "change_notional_percentage": 4203.069
+      },
+      "atm_vol": {
+        "value": 101.76,
+        "change": 1.65,
+        "intensity": 0.88
+      },
+      "basis": {
+        "value": -0.018,
+        "change": -0.054,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.36,
+        "change": -1.8,
+        "intensity": 0.32
+      },
+      "_25_delta_butterfly": {
+        "value": 4.17,
+        "change": 1,
+        "intensity": 0.17
+      },
+      "open_interest_volume": {
+        "value": 12.74,
+        "change": -97.49
+      },
+      "market": {
+        "value": ["BIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "SOL-29MAR24"
+      },
+      "currency": {
+        "value": "SOL"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 111.72
+      },
+      "change": {
+        "value": -1.1065
+      },
+      "open_interest": {
+        "value": 1423616,
+        "intensity": 0,
+        "notional": 12742.714,
+        "change_usd_percentage": 50.517,
+        "change_usd": 477800.1,
+        "change_notional": 4370.439,
+        "change_notional_percentage": 52.201
+      },
+      "volume": {
+        "value": 537859.9,
+        "intensity": 0,
+        "notional": 4814.356,
+        "change_usd_percentage": 750.783,
+        "change_usd": 474640.5,
+        "change_notional": 4254.744,
+        "change_notional_percentage": 760.302
+      },
+      "atm_vol": {
+        "value": 101.05,
+        "change": -12.24,
+        "intensity": 0.88
+      },
+      "basis": {
+        "value": 0.45,
+        "change": 0.023,
+        "intensity": 0.04
+      },
+      "_25_delta_risk_reversal": {
+        "value": 12.35,
+        "change": -1.23,
+        "intensity": 0.53
+      },
+      "_25_delta_butterfly": {
+        "value": 17.42,
+        "change": 14.16,
+        "intensity": 0.72
+      },
+      "open_interest_volume": {
+        "value": 2.647,
+        "change": -82.31
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-20FEB24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "20/02/24"
+      },
+      "underlying_price": {
+        "value": 352.73
+      },
+      "change": {
+        "value": -1.1878
+      },
+      "open_interest": {
+        "value": 1433762.8,
+        "intensity": 0,
+        "notional": 4064.76,
+        "change_usd_percentage": 4032.608,
+        "change_usd": 1399068.9,
+        "change_notional": 3967.57,
+        "change_notional_percentage": 4082.284
+      },
+      "volume": {
+        "value": 1430637.6,
+        "intensity": 0.01,
+        "notional": 4055.9,
+        "change_usd_percentage": 4287.705,
+        "change_usd": 1398032,
+        "change_notional": 3964.56,
+        "change_notional_percentage": 4340.448
+      },
+      "atm_vol": {
+        "value": 53.8,
+        "change": 7.3,
+        "intensity": 0.47
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 0.8,
+        "change": -5.9,
+        "intensity": 0.03
+      },
+      "_25_delta_butterfly": {
+        "value": 1,
+        "change": -1.25,
+        "intensity": 0.04
+      },
+      "open_interest_volume": {
+        "value": 1.002,
+        "change": -5.814
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-21FEB24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "21/02/24"
+      },
+      "underlying_price": {
+        "value": 352.73
+      },
+      "change": {
+        "value": -1.1878
+      },
+      "open_interest": {
+        "value": 223510.9,
+        "intensity": 0,
+        "notional": 633.66,
+        "change_usd_percentage": 6208536.111,
+        "change_usd": 223507.3,
+        "change_notional": 633.65,
+        "change_notional_percentage": 6283167.18
+      },
+      "volume": {
+        "value": 223525,
+        "intensity": 0,
+        "notional": 633.7,
+        "change_usd_percentage": 6208927.778,
+        "change_usd": 223521.4,
+        "change_notional": 633.69,
+        "change_notional_percentage": 6283563.555
+      },
+      "atm_vol": {
+        "value": 49.8,
+        "change": 2.8,
+        "intensity": 0.43
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.6,
+        "change": 3.7,
+        "intensity": 0.33
+      },
+      "_25_delta_butterfly": {
+        "value": 3.3,
+        "change": 0.65,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 1,
+        "change": -0.00631
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-23FEB24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 352.73
+      },
+      "change": {
+        "value": -1.1878
+      },
+      "open_interest": {
+        "value": 1437417.1,
+        "intensity": 0,
+        "notional": 4075.12,
+        "change_usd_percentage": -2.2447,
+        "change_usd": -33006.6,
+        "change_notional": -44.06,
+        "change_notional_percentage": -1.0696
+      },
+      "volume": {
+        "value": 269859.6,
+        "intensity": 0,
+        "notional": 765.06,
+        "change_usd_percentage": 865.975,
+        "change_usd": 241923.1,
+        "change_notional": 686.8,
+        "change_notional_percentage": 877.587
+      },
+      "atm_vol": {
+        "value": 49.2,
+        "change": 1.8,
+        "intensity": 0.43
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 2.8,
+        "change": 3.4,
+        "intensity": 0.12
+      },
+      "_25_delta_butterfly": {
+        "value": 6.9,
+        "change": 0.8,
+        "intensity": 0.28
+      },
+      "open_interest_volume": {
+        "value": 5.327,
+        "change": -89.88
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-1MAR24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 352.73
+      },
+      "change": {
+        "value": -1.1878
+      },
+      "open_interest": {
+        "value": 376641.6,
+        "intensity": 0,
+        "notional": 1067.79,
+        "change_usd_percentage": 109.405,
+        "change_usd": 196778.7,
+        "change_notional": 563.93,
+        "change_notional_percentage": 111.922
+      },
+      "volume": {
+        "value": 201207.8,
+        "intensity": 0,
+        "notional": 570.43,
+        "change_usd_percentage": 508.896,
+        "change_usd": 168163.1,
+        "change_notional": 477.86,
+        "change_notional_percentage": 516.215
+      },
+      "atm_vol": {
+        "value": 53.4,
+        "change": 3.8,
+        "intensity": 0.46
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 0,
+        "change": -2.7,
+        "intensity": 0
+      },
+      "_25_delta_butterfly": {
+        "value": -0.8,
+        "change": -3.05,
+        "intensity": -0.03
+      },
+      "open_interest_volume": {
+        "value": 1.872,
+        "change": -65.61
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-23FEB24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 0.56
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 1673828.1,
+        "intensity": 0,
+        "notional": 2988978.75,
+        "change_usd_percentage": 25.803,
+        "change_usd": 343314.4,
+        "change_notional": 613061.429,
+        "change_notional_percentage": 25.803
+      },
+      "volume": {
+        "value": 16269.5,
+        "intensity": 0,
+        "notional": 29052.679,
+        "change_usd_percentage": -14.016,
+        "change_usd": -2652.1,
+        "change_notional": -4735.893,
+        "change_notional_percentage": -14.016
+      },
+      "atm_vol": {
+        "value": 57.573,
+        "change": 5.8656,
+        "intensity": 0.5
+      },
+      "basis": {
+        "value": 0.001094,
+        "change": -0.001656,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 10.602,
+        "change": 0.4936,
+        "intensity": 0.46
+      },
+      "_25_delta_butterfly": {
+        "value": 0.6523,
+        "change": -5.7852,
+        "intensity": 0.03
+      },
+      "open_interest_volume": {
+        "value": 102.88,
+        "change": 46.31
+      },
+      "market": {
+        "value": ["BIT", "COINCALL", "BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-1MAR24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 0.56
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 378853.9,
+        "intensity": 0,
+        "notional": 676524.821,
+        "change_usd_percentage": 8.6568,
+        "change_usd": 30183.6,
+        "change_notional": 53899.286,
+        "change_notional_percentage": 8.6568
+      },
+      "volume": {
+        "value": 36818.4,
+        "intensity": 0,
+        "notional": 65747.143,
+        "change_usd_percentage": -71.26,
+        "change_usd": -91291.6,
+        "change_notional": -163020.714,
+        "change_notional_percentage": -71.26
+      },
+      "atm_vol": {
+        "value": 57.184,
+        "change": 1.0559,
+        "intensity": 0.5
+      },
+      "basis": {
+        "value": 0.004493,
+        "change": -0.176,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 0.2211,
+        "change": -3.7978,
+        "intensity": 0.01
+      },
+      "_25_delta_butterfly": {
+        "value": -1.0511,
+        "change": -2.5824,
+        "intensity": -0.04
+      },
+      "open_interest_volume": {
+        "value": 10.29,
+        "change": 278.07
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-8MAR24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "underlying_price": {
+        "value": 0.56
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 187.4,
+        "intensity": 0,
+        "notional": 334.643,
+        "change_usd_percentage": 21.926,
+        "change_usd": 33.7,
+        "change_notional": 60.179,
+        "change_notional_percentage": 21.926
+      },
+      "volume": {
+        "value": 33.9,
+        "intensity": 0,
+        "notional": 60.536,
+        "change_usd_percentage": 6.9401,
+        "change_usd": 2.2,
+        "change_notional": 3.9286,
+        "change_notional_percentage": 6.9401
+      },
+      "atm_vol": {
+        "value": 59.87,
+        "change": 1.99,
+        "intensity": 0.52
+      },
+      "basis": {
+        "value": 0.719,
+        "change": -0.179,
+        "intensity": 0.07
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.71,
+        "change": -0.99,
+        "intensity": 0.16
+      },
+      "_25_delta_butterfly": {
+        "value": 2.6,
+        "change": -0.21,
+        "intensity": 0.11
+      },
+      "open_interest_volume": {
+        "value": 5.528,
+        "change": 14.01
+      },
+      "market": {
+        "value": ["BIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-29MAR24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 0.56
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 443667.6,
+        "intensity": 0,
+        "notional": 792263.571,
+        "change_usd_percentage": 4.3425,
+        "change_usd": 18464.4,
+        "change_notional": 32972.143,
+        "change_notional_percentage": 4.3425
+      },
+      "volume": {
+        "value": 22319.4,
+        "intensity": 0,
+        "notional": 39856.071,
+        "change_usd_percentage": -9.7506,
+        "change_usd": -2411.4,
+        "change_notional": -4306.071,
+        "change_notional_percentage": -9.7506
+      },
+      "atm_vol": {
+        "value": 67.992,
+        "change": 0.9658,
+        "intensity": 0.59
+      },
+      "basis": {
+        "value": 0.8235,
+        "change": -0.1167,
+        "intensity": 0.08
+      },
+      "_25_delta_risk_reversal": {
+        "value": 7.3627,
+        "change": -1.4619,
+        "intensity": 0.32
+      },
+      "_25_delta_butterfly": {
+        "value": 1.9172,
+        "change": -0.3841,
+        "intensity": 0.08
+      },
+      "open_interest_volume": {
+        "value": 19.88,
+        "change": 15.62
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "MATIC-23FEB24"
+      },
+      "currency": {
+        "value": "MATIC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 1
+      },
+      "change": {
+        "value": 5.2632
+      },
+      "open_interest": {
+        "value": 1409307.9,
+        "intensity": 0,
+        "notional": 1409307.9,
+        "change_usd_percentage": 183.07,
+        "change_usd": 911442.3,
+        "change_notional": 885238.847,
+        "change_notional_percentage": 168.917
+      },
+      "volume": {
+        "value": 883782.9,
+        "intensity": 0,
+        "notional": 883782.9,
+        "change_usd_percentage": 7701.756,
+        "change_usd": 872454.9,
+        "change_notional": 871858.689,
+        "change_notional_percentage": 7311.668
+      },
+      "atm_vol": {
+        "value": 68.26,
+        "change": 0.23,
+        "intensity": 0.59
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.106,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 11.28,
+        "change": -0.3,
+        "intensity": 0.49
+      },
+      "_25_delta_butterfly": {
+        "value": -5.64,
+        "change": -3.23,
+        "intensity": -0.23
+      },
+      "open_interest_volume": {
+        "value": 1.595,
+        "change": -96.37
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "MATIC-1MAR24"
+      },
+      "currency": {
+        "value": "MATIC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 1
+      },
+      "change": {
+        "value": 5.2632
+      },
+      "open_interest": {
+        "value": 132432.3,
+        "intensity": 0,
+        "notional": 132432.3,
+        "change_usd_percentage": 27.419,
+        "change_usd": 28497.9,
+        "change_notional": 23027.668,
+        "change_notional_percentage": 21.048
+      },
+      "volume": {
+        "value": 31431.4,
+        "intensity": 0,
+        "notional": 31431.4,
+        "change_usd_percentage": 9.8877,
+        "change_usd": 2828.2,
+        "change_notional": 1322.768,
+        "change_notional_percentage": 4.3933
+      },
+      "atm_vol": {
+        "value": 70.76,
+        "change": 8.52,
+        "intensity": 0.61
+      },
+      "basis": {
+        "value": 0.1,
+        "change": -0.112,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.92,
+        "change": 1.32,
+        "intensity": 0.3
+      },
+      "_25_delta_butterfly": {
+        "value": -1,
+        "change": -5.32,
+        "intensity": -0.04
+      },
+      "open_interest_volume": {
+        "value": 4.213,
+        "change": 15.95
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "MATIC-29MAR24"
+      },
+      "currency": {
+        "value": "MATIC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 1
+      },
+      "change": {
+        "value": 5.2632
+      },
+      "open_interest": {
+        "value": 318418.1,
+        "intensity": 0,
+        "notional": 318418.1,
+        "change_usd_percentage": 17.365,
+        "change_usd": 47112.5,
+        "change_notional": 32833.258,
+        "change_notional_percentage": 11.497
+      },
+      "volume": {
+        "value": 49549.5,
+        "intensity": 0,
+        "notional": 49549.5,
+        "change_usd_percentage": 98.071,
+        "change_usd": 24533.5,
+        "change_notional": 23216.868,
+        "change_notional_percentage": 88.168
+      },
+      "atm_vol": {
+        "value": 74.88,
+        "change": 2.08,
+        "intensity": 0.65
+      },
+      "basis": {
+        "value": 0.4,
+        "change": -0.024,
+        "intensity": 0.04
+      },
+      "_25_delta_risk_reversal": {
+        "value": 11.92,
+        "change": -3.23,
+        "intensity": 0.52
+      },
+      "_25_delta_butterfly": {
+        "value": 5.22,
+        "change": -1.82,
+        "intensity": 0.22
+      },
+      "open_interest_volume": {
+        "value": 6.426,
+        "change": -40.75
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LINK-23FEB24"
+      },
+      "currency": {
+        "value": "LINK"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 19.84
+      },
+      "change": {
+        "value": -0.8
+      },
+      "open_interest": {
+        "value": 871211.2,
+        "intensity": 0,
+        "notional": 43911.855,
+        "change_usd_percentage": 0.06509,
+        "change_usd": 566.7,
+        "change_notional": 379.63,
+        "change_notional_percentage": 0.8721
+      },
+      "volume": {
+        "value": 21416.4,
+        "intensity": 0,
+        "notional": 1079.456,
+        "change_usd_percentage": -51.5,
+        "change_usd": -22741.5,
+        "change_notional": -1128.439,
+        "change_notional_percentage": -51.109
+      },
+      "atm_vol": {
+        "value": 78.37,
+        "change": 1.97,
+        "intensity": 0.68
+      },
+      "basis": {
+        "value": 0.05,
+        "change": -6.939e-18,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 22.16,
+        "change": 12.03,
+        "intensity": 0.96
+      },
+      "_25_delta_butterfly": {
+        "value": 9.22,
+        "change": 6.98,
+        "intensity": 0.38
+      },
+      "open_interest_volume": {
+        "value": 40.68,
+        "change": 106.32
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LINK-1MAR24"
+      },
+      "currency": {
+        "value": "LINK"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 19.86
+      },
+      "change": {
+        "value": -0.7496
+      },
+      "open_interest": {
+        "value": 182535.2,
+        "intensity": 0,
+        "notional": 9191.098,
+        "change_usd_percentage": 25.741,
+        "change_usd": 37367.8,
+        "change_notional": 1936.355,
+        "change_notional_percentage": 26.691
+      },
+      "volume": {
+        "value": 58518.3,
+        "intensity": 0,
+        "notional": 2946.541,
+        "change_usd_percentage": 19.485,
+        "change_usd": 9542.8,
+        "change_notional": 498.99,
+        "change_notional_percentage": 20.387
+      },
+      "atm_vol": {
+        "value": 78.06,
+        "change": 2.95,
+        "intensity": 0.68
+      },
+      "basis": {
+        "value": 0.151,
+        "change": 0.051,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": -2.1,
+        "change": -18.49,
+        "intensity": -0.09
+      },
+      "_25_delta_butterfly": {
+        "value": -1.48,
+        "change": -2.33,
+        "intensity": -0.06
+      },
+      "open_interest_volume": {
+        "value": 3.119,
+        "change": 5.236
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LINK-29MAR24"
+      },
+      "currency": {
+        "value": "LINK"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 19.92
+      },
+      "change": {
+        "value": -0.7968
+      },
+      "open_interest": {
+        "value": 503384.6,
+        "intensity": 0,
+        "notional": 25270.311,
+        "change_usd_percentage": 7.919,
+        "change_usd": 36937.9,
+        "change_notional": 2040.894,
+        "change_notional_percentage": 8.7858
+      },
+      "volume": {
+        "value": 61453.2,
+        "intensity": 0,
+        "notional": 3085,
+        "change_usd_percentage": 22.576,
+        "change_usd": 11318.3,
+        "change_notional": 588.242,
+        "change_notional_percentage": 23.56
+      },
+      "atm_vol": {
+        "value": 82.45,
+        "change": -4.03,
+        "intensity": 0.72
+      },
+      "basis": {
+        "value": 0.454,
+        "change": 0.004,
+        "intensity": 0.04
+      },
+      "_25_delta_risk_reversal": {
+        "value": 14.21,
+        "change": -1,
+        "intensity": 0.62
+      },
+      "_25_delta_butterfly": {
+        "value": 6.27,
+        "change": 5.27,
+        "intensity": 0.26
+      },
+      "open_interest_volume": {
+        "value": 8.191,
+        "change": -11.96
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BCH-23FEB24"
+      },
+      "currency": {
+        "value": "BCH"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 269.052
+      },
+      "change": {
+        "value": 0.05361
+      },
+      "open_interest": {
+        "value": 624799.1,
+        "intensity": 0,
+        "notional": 2322.226,
+        "change_usd_percentage": 1.2018,
+        "change_usd": 7419.9,
+        "change_notional": 26.348,
+        "change_notional_percentage": 1.1476
+      },
+      "volume": {
+        "value": 17788.6,
+        "intensity": 0,
+        "notional": 66.116,
+        "change_usd_percentage": 113.462,
+        "change_usd": 9455.2,
+        "change_notional": 35.126,
+        "change_notional_percentage": 113.347
+      },
+      "atm_vol": {
+        "value": 66.465,
+        "change": -7.3164,
+        "intensity": 0.58
+      },
+      "basis": {
+        "value": -0.01013,
+        "change": -0.04563,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 9.8358,
+        "change": -6.0181,
+        "intensity": 0.43
+      },
+      "_25_delta_butterfly": {
+        "value": 12.147,
+        "change": 4.607,
+        "intensity": 0.5
+      },
+      "open_interest_volume": {
+        "value": 35.12,
+        "change": -52.59
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BCH-1MAR24"
+      },
+      "currency": {
+        "value": "BCH"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 269.15
+      },
+      "change": {
+        "value": 0.07064
+      },
+      "open_interest": {
+        "value": 161875.7,
+        "intensity": 0,
+        "notional": 601.433,
+        "change_usd_percentage": 30.059,
+        "change_usd": 37412,
+        "change_notional": 138.674,
+        "change_notional_percentage": 29.967
+      },
+      "volume": {
+        "value": 57564.8,
+        "intensity": 0,
+        "notional": 213.876,
+        "change_usd_percentage": 82.556,
+        "change_usd": 26032.2,
+        "change_notional": 96.637,
+        "change_notional_percentage": 82.428
+      },
+      "atm_vol": {
+        "value": 73.07,
+        "change": 2.11,
+        "intensity": 0.63
+      },
+      "basis": {
+        "value": 0.012,
+        "change": -0.04,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.12,
+        "change": 1.59,
+        "intensity": 0.22
+      },
+      "_25_delta_butterfly": {
+        "value": 3.5,
+        "change": -0.03,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 2.812,
+        "change": -28.76
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BCH-29MAR24"
+      },
+      "currency": {
+        "value": "BCH"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 270.468
+      },
+      "change": {
+        "value": 0.2323
+      },
+      "open_interest": {
+        "value": 396065.7,
+        "intensity": 0,
+        "notional": 1464.372,
+        "change_usd_percentage": 33.854,
+        "change_usd": 100171.9,
+        "change_notional": 367.823,
+        "change_notional_percentage": 33.544
+      },
+      "volume": {
+        "value": 108382.9,
+        "intensity": 0,
+        "notional": 400.724,
+        "change_usd_percentage": 96.247,
+        "change_usd": 53155.2,
+        "change_notional": 196.056,
+        "change_notional_percentage": 95.792
+      },
+      "atm_vol": {
+        "value": 76.725,
+        "change": -0.02709,
+        "intensity": 0.67
+      },
+      "basis": {
+        "value": 0.5828,
+        "change": 0.1953,
+        "intensity": 0.05
+      },
+      "_25_delta_risk_reversal": {
+        "value": 6.6591,
+        "change": -1.5857,
+        "intensity": 0.29
+      },
+      "_25_delta_butterfly": {
+        "value": 3.4846,
+        "change": 0.9308,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 3.654,
+        "change": -31.79
+      },
+      "market": {
+        "value": ["BIT", "COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "DOGE-23FEB24"
+      },
+      "currency": {
+        "value": "DOGE"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 0.09
+      },
+      "change": {
+        "value": 12.5
+      },
+      "open_interest": {
+        "value": 704559.7,
+        "intensity": 0,
+        "notional": 7828441.111,
+        "change_usd_percentage": 6.96,
+        "change_usd": 45846.6,
+        "change_notional": -405472.639,
+        "change_notional_percentage": -4.9244
+      },
+      "volume": {
+        "value": 13815.1,
+        "intensity": 0,
+        "notional": 153501.111,
+        "change_usd_percentage": 67.158,
+        "change_usd": 5550.4,
+        "change_notional": 50192.361,
+        "change_notional_percentage": 48.585
+      },
+      "atm_vol": {
+        "value": 62.364,
+        "change": 8.8831,
+        "intensity": 0.54
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.09063,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 14.637,
+        "change": 8.9407,
+        "intensity": 0.63
+      },
+      "_25_delta_butterfly": {
+        "value": 5.2389,
+        "change": -1.159,
+        "intensity": 0.22
+      },
+      "open_interest_volume": {
+        "value": 51,
+        "change": -36.01
+      },
+      "market": {
+        "value": ["COINCALL", "BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "DOGE-1MAR24"
+      },
+      "currency": {
+        "value": "DOGE"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 0.09
+      },
+      "change": {
+        "value": 12.5
+      },
+      "open_interest": {
+        "value": 104783.7,
+        "intensity": 0,
+        "notional": 1164263.333,
+        "change_usd_percentage": 19.115,
+        "change_usd": 16815.1,
+        "change_notional": 64655.833,
+        "change_notional_percentage": 5.8799
+      },
+      "volume": {
+        "value": 22644.3,
+        "intensity": 0,
+        "notional": 251603.333,
+        "change_usd_percentage": -4.8571,
+        "change_usd": -1156,
+        "change_notional": -45900.417,
+        "change_notional_percentage": -15.428
+      },
+      "atm_vol": {
+        "value": 61.37,
+        "change": 0.9,
+        "intensity": 0.53
+      },
+      "basis": {
+        "value": 0.116,
+        "change": -0.003,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 11.54,
+        "change": 9.33,
+        "intensity": 0.5
+      },
+      "_25_delta_butterfly": {
+        "value": 6.82,
+        "change": 4.79,
+        "intensity": 0.28
+      },
+      "open_interest_volume": {
+        "value": 4.627,
+        "change": 25.2
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "DOGE-29MAR24"
+      },
+      "currency": {
+        "value": "DOGE"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 0.09
+      },
+      "change": {
+        "value": 12.5
+      },
+      "open_interest": {
+        "value": 300661.2,
+        "intensity": 0,
+        "notional": 3340680,
+        "change_usd_percentage": 9.4625,
+        "change_usd": 25990.6,
+        "change_notional": -92702.5,
+        "change_notional_percentage": -2.7
+      },
+      "volume": {
+        "value": 36850.8,
+        "intensity": 0,
+        "notional": 409453.333,
+        "change_usd_percentage": 58.187,
+        "change_usd": 13555.1,
+        "change_notional": 118257.083,
+        "change_notional_percentage": 40.611
+      },
+      "atm_vol": {
+        "value": 76.93,
+        "change": 2.67,
+        "intensity": 0.67
+      },
+      "basis": {
+        "value": 0.348,
+        "change": -0.128,
+        "intensity": 0.03
+      },
+      "_25_delta_risk_reversal": {
+        "value": 10.58,
+        "change": 1.19,
+        "intensity": 0.46
+      },
+      "_25_delta_butterfly": {
+        "value": 2.7,
+        "change": -0.32,
+        "intensity": 0.11
+      },
+      "open_interest_volume": {
+        "value": 8.159,
+        "change": -30.8
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TRX-23FEB24"
+      },
+      "currency": {
+        "value": "TRX"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 0.13
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 476685,
+        "intensity": 0,
+        "notional": 3666807.692,
+        "change_usd_percentage": 1.1168,
+        "change_usd": 5265,
+        "change_notional": 40500,
+        "change_notional_percentage": 1.1168
+      },
+      "volume": {
+        "value": 9585,
+        "intensity": 0,
+        "notional": 73730.769,
+        "change_usd_percentage": 14.516,
+        "change_usd": 1215,
+        "change_notional": 9346.154,
+        "change_notional_percentage": 14.516
+      },
+      "atm_vol": {
+        "value": 46.79,
+        "change": 1.62,
+        "intensity": 0.41
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 2.09,
+        "change": -1.59,
+        "intensity": 0.09
+      },
+      "_25_delta_butterfly": {
+        "value": -1.04,
+        "change": 0.8,
+        "intensity": -0.04
+      },
+      "open_interest_volume": {
+        "value": 49.73,
+        "change": -11.7
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TRX-1MAR24"
+      },
+      "currency": {
+        "value": "TRX"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 0.13
+      },
+      "change": {
+        "value": -7.1429
+      },
+      "open_interest": {
+        "value": 96930,
+        "intensity": 0,
+        "notional": 745615.385,
+        "change_usd_percentage": 49.896,
+        "change_usd": 32265,
+        "change_notional": 283722.528,
+        "change_notional_percentage": 61.426
+      },
+      "volume": {
+        "value": 40365,
+        "intensity": 0,
+        "notional": 310500,
+        "change_usd_percentage": 45.854,
+        "change_usd": 12690,
+        "change_notional": 112821.429,
+        "change_notional_percentage": 57.073
+      },
+      "atm_vol": {
+        "value": 41.98,
+        "change": 1.85,
+        "intensity": 0.36
+      },
+      "basis": {
+        "value": 0,
+        "change": -0.741,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 3.7,
+        "change": 1.42,
+        "intensity": 0.16
+      },
+      "_25_delta_butterfly": {
+        "value": 1.61,
+        "change": -0.28,
+        "intensity": 0.07
+      },
+      "open_interest_volume": {
+        "value": 2.401,
+        "change": 2.771
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TRX-29MAR24"
+      },
+      "currency": {
+        "value": "TRX"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 0.14
+      },
+      "change": {
+        "value": 0
+      },
+      "open_interest": {
+        "value": 480195,
+        "intensity": 0,
+        "notional": 3429964.286,
+        "change_usd_percentage": 7.1063,
+        "change_usd": 31860,
+        "change_notional": 227571.429,
+        "change_notional_percentage": 7.1063
+      },
+      "volume": {
+        "value": 36450,
+        "intensity": 0,
+        "notional": 260357.143,
+        "change_usd_percentage": 50.838,
+        "change_usd": 12285,
+        "change_notional": 87750,
+        "change_notional_percentage": 50.838
+      },
+      "atm_vol": {
+        "value": 41.5,
+        "change": 0.63,
+        "intensity": 0.36
+      },
+      "basis": {
+        "value": 0.741,
+        "change": 0,
+        "intensity": 0.07
+      },
+      "_25_delta_risk_reversal": {
+        "value": 4.46,
+        "change": -1.06,
+        "intensity": 0.19
+      },
+      "_25_delta_butterfly": {
+        "value": 2.16,
+        "change": -0.03,
+        "intensity": 0.09
+      },
+      "open_interest_volume": {
+        "value": 13.17,
+        "change": -28.99
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-23FEB24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "underlying_price": {
+        "value": 70.69
+      },
+      "change": {
+        "value": 0.3549
+      },
+      "open_interest": {
+        "value": 432024.8,
+        "intensity": 0,
+        "notional": 6111.541,
+        "change_usd_percentage": 0.954,
+        "change_usd": 4082.5,
+        "change_notional": 36.267,
+        "change_notional_percentage": 0.5969
+      },
+      "volume": {
+        "value": 9608.4,
+        "intensity": 0,
+        "notional": 135.923,
+        "change_usd_percentage": 35.094,
+        "change_usd": 2496,
+        "change_notional": 34.952,
+        "change_notional_percentage": 34.616
+      },
+      "atm_vol": {
+        "value": 47.17,
+        "change": 2.19,
+        "intensity": 0.41
+      },
+      "basis": {
+        "value": 0.057,
+        "change": 0.029,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.18,
+        "change": -1.06,
+        "intensity": 0.22
+      },
+      "_25_delta_butterfly": {
+        "value": 3.36,
+        "change": -0.25,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 44.96,
+        "change": -25.27
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-1MAR24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "underlying_price": {
+        "value": 70.74
+      },
+      "change": {
+        "value": 0.3547
+      },
+      "open_interest": {
+        "value": 96296,
+        "intensity": 0,
+        "notional": 1361.267,
+        "change_usd_percentage": 29.986,
+        "change_usd": 22214.2,
+        "change_notional": 310.312,
+        "change_notional_percentage": 29.527
+      },
+      "volume": {
+        "value": 42743.3,
+        "intensity": 0,
+        "notional": 604.231,
+        "change_usd_percentage": 142.791,
+        "change_usd": 25138.3,
+        "change_notional": 354.479,
+        "change_notional_percentage": 141.933
+      },
+      "atm_vol": {
+        "value": 48.49,
+        "change": 0.81,
+        "intensity": 0.42
+      },
+      "basis": {
+        "value": 0.127,
+        "change": 0.028,
+        "intensity": 0.01
+      },
+      "_25_delta_risk_reversal": {
+        "value": 4.27,
+        "change": -0.74,
+        "intensity": 0.18
+      },
+      "_25_delta_butterfly": {
+        "value": 4.21,
+        "change": 0.41,
+        "intensity": 0.17
+      },
+      "open_interest_volume": {
+        "value": 2.253,
+        "change": -46.46
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-29MAR24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "underlying_price": {
+        "value": 70.93
+      },
+      "change": {
+        "value": 0.3395
+      },
+      "open_interest": {
+        "value": 286839,
+        "intensity": 0,
+        "notional": 4043.973,
+        "change_usd_percentage": 13.842,
+        "change_usd": 34876.2,
+        "change_notional": 479.639,
+        "change_notional_percentage": 13.457
+      },
+      "volume": {
+        "value": 50585.4,
+        "intensity": 0,
+        "notional": 713.174,
+        "change_usd_percentage": 43.381,
+        "change_usd": 15305,
+        "change_notional": 214.087,
+        "change_notional_percentage": 42.896
+      },
+      "atm_vol": {
+        "value": 56.27,
+        "change": 0.83,
+        "intensity": 0.49
+      },
+      "basis": {
+        "value": 0.396,
+        "change": 0.013,
+        "intensity": 0.04
+      },
+      "_25_delta_risk_reversal": {
+        "value": 9.35,
+        "change": -1.59,
+        "intensity": 0.4
+      },
+      "_25_delta_butterfly": {
+        "value": 4.73,
+        "change": -0.06,
+        "intensity": 0.19
+      },
+      "open_interest_volume": {
+        "value": 5.67,
+        "change": -20.6
+      },
+      "market": {
+        "value": ["COINCALL"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TON-8MAR24"
+      },
+      "currency": {
+        "value": "TON"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "underlying_price": {
+        "value": 2.24
+      },
+      "change": {
+        "value": -0.4444
+      },
+      "open_interest": {
+        "value": 13924.3,
+        "intensity": 0,
+        "notional": 6216.205,
+        "change_usd_percentage": 345.378,
+        "change_usd": 10797.9,
+        "change_notional": 4826.694,
+        "change_notional_percentage": 347.366
+      },
+      "volume": {
+        "value": 10807.7,
+        "intensity": 0,
+        "notional": 4824.866,
+        "change_usd_percentage": 310.222,
+        "change_usd": 8173.1,
+        "change_notional": 3653.933,
+        "change_notional_percentage": 312.053
+      },
+      "atm_vol": {
+        "value": 71.52,
+        "change": 2.07,
+        "intensity": 0.62
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "_25_delta_risk_reversal": {
+        "value": 5.65,
+        "change": -1.22,
+        "intensity": 0.24
+      },
+      "_25_delta_butterfly": {
+        "value": 0.67,
+        "change": 0.24,
+        "intensity": 0.03
+      },
+      "open_interest_volume": {
+        "value": 1.288,
+        "change": 8.57
+      },
+      "market": {
+        "value": ["BIT"]
+      }
+    }
+  ]}

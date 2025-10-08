@@ -1,0 +1,16 @@
+
+
+<div class="chat-container" [class.closed]="isClosed">
+  <div class="chat-header" (click)="toggleChat()">Chat with us
+  </div>
+  <div class="chat-body" *ngIf="!isClosed">
+    <div *ngFor="let message of conversation" class="message" [attr.data-sender]="message.sender">
+      <p><strong>{{ message.sender }}:</strong> {{ message.message }}</p>
+    </div>
+  </div>
+  <div class="chat-input" *ngIf="!isClosed">
+    <input [(ngModel)]="query" placeholder="Ask me about cryptocurrencies..." />
+    <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
+

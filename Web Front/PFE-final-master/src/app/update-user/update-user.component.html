@@ -1,0 +1,39 @@
+<body>
+  <app-menu></app-menu>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+           UPDATE USER
+          </div>
+          <div class="card-body">
+            <form (ngSubmit)="updateUser()" class="user-form">
+              <div class="form-group">
+                <label for="userId">User ID</label>
+                <input readonly type="text" [(ngModel)]="userToUpdate.user_id" name="userId" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input readonly type="email" class="form-control" id="email" [(ngModel)]="userToUpdate.email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="status">Status</label>
+                <input readonly type="text" class="form-control" id="status" [(ngModel)]="userToUpdate.enabled" name="status" [ngClass]="{'enabled': userToUpdate.enabled, 'disabled': !userToUpdate.enabled}">
+              </div>
+
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" [(ngModel)]="userToUpdate.username" name="username" required>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Update User</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

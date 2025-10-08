@@ -1,0 +1,145 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #080C0F;
+  color: white;
+}
+
+.main-container {
+  margin-top: 100px;
+  margin-left: -525px;
+  padding: 0 -10px;
+  border-radius: 4px;
+  width: 170%;
+}
+
+.notifs-container {
+  background-color: #12161c;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+.card-title {
+  color: white;
+  text-align: center;
+  padding: 3px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #1DA2B4;
+  margin-bottom: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.notif-card {
+  background-color: #1b2026;
+  border: 1px solid #2c313a;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.notif-card.new-notif {
+  background-color: #3b4a56; /* Highlight new notifications */
+}
+
+.notif-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.notif-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1DA2B4;
+}
+
+.notif-condition,
+.notif-type {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #ffffff;
+}
+
+.notif-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.notif-actions .btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.notif-actions .btn i {
+  font-size: 1rem;
+}
+
+.edit-btn i {
+  color: white;
+}
+
+.delete-btn i {
+  color: white;
+}
+
+.notif-date {
+  color: #b7b9bd;
+  font-size: 13px;
+}
+
+app-menu {
+  width: 100%;
+}
+
+.table {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.table-dark {
+  background-color: #343a40;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.btn-danger, .btn-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.btn-success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 14px;
+  font-size: 13px;
+  background-color:  #1DA2B4;
+
+  border: 1px solid #1DA2B4;
+}

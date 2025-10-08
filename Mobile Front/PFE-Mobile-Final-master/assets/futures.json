@@ -1,0 +1,2415 @@
+{    "futures" :
+[
+    {
+      "ticker": {
+        "value": "BTC-23FEB24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 52440.501
+      },
+      "change": {
+        "value": 0.6734
+      },
+      "open_interest": {
+        "value": 156078199.334,
+        "intensity": 0.23,
+        "notional": 2976.291,
+        "change_usd_percentage": 7.1076,
+        "change_usd": 10357305.664,
+        "change_notional": 178.793,
+        "change_notional_percentage": 6.3912,
+        "change_intensity": 0.57
+      },
+      "volume": {
+        "value": 45847213.869,
+        "intensity": 0.3,
+        "notional": 874.271,
+        "change_usd_percentage": 17.968,
+        "change_usd": 6983216.391,
+        "change_notional": 128.174,
+        "change_notional_percentage": 17.179
+      },
+      "yield": {
+        "value": 20.875,
+        "change": 20.875,
+        "intensity": 0.52
+      },
+      "basis": {
+        "value": 0.2218,
+        "change": -0.0351,
+        "intensity": 0.02
+      },
+      "open_interest_volume": {
+        "value": 3.404,
+        "change": -9.206
+      },
+      "market": {
+        "value": ["BITMEX", "HUOBI", "OKEX", "DERIBIT", "BYBIT", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-1MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 52597.691
+      },
+      "change": {
+        "value": 0.7099
+      },
+      "open_interest": {
+        "value": 13279826.119,
+        "intensity": 0.02,
+        "notional": 252.479,
+        "change_usd_percentage": 11.868,
+        "change_usd": 1408845.709,
+        "change_notional": 25.183,
+        "change_notional_percentage": 11.079,
+        "change_intensity": 0.08
+      },
+      "volume": {
+        "value": 16890091.376,
+        "intensity": 0.11,
+        "notional": 321.118,
+        "change_usd_percentage": -27.665,
+        "change_usd": -6459821.921,
+        "change_notional": -125.967,
+        "change_notional_percentage": -28.175
+      },
+      "yield": {
+        "value": 17.765,
+        "change": 17.765,
+        "intensity": 0.44
+      },
+      "basis": {
+        "value": 0.5223,
+        "change": -0.009818,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 0.786,
+        "change": 54.65
+      },
+      "market": {
+        "value": ["OKEX", "DERIBIT", "BYBIT", "HUOBI"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-8MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "price": {
+        "value": 52724.5
+      },
+      "change": {
+        "value": 0.6452
+      },
+      "open_interest": {
+        "value": 4.996,
+        "intensity": 0,
+        "notional": 0.00009476,
+        "change_usd_percentage": -1.7696,
+        "change_usd": -0.09,
+        "change_notional": -0.000002329,
+        "change_notional_percentage": -2.3993,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 0.452,
+        "intensity": 0,
+        "notional": 0.000008573,
+        "change_usd_percentage": 62.007,
+        "change_usd": 0.173,
+        "change_notional": 0.000003247,
+        "change_notional_percentage": 60.969
+      },
+      "yield": {
+        "value": 15.49,
+        "change": 15.49,
+        "intensity": 0.39
+      },
+      "basis": {
+        "value": 0.76,
+        "change": -0.075,
+        "intensity": 0.07
+      },
+      "open_interest_volume": {
+        "value": 11.05,
+        "change": -39.37
+      },
+      "market": {
+        "value": ["BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-29MAR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 53221.387
+      },
+      "change": {
+        "value": 0.78
+      },
+      "open_interest": {
+        "value": 669143686.256,
+        "intensity": 1,
+        "notional": 12572.834,
+        "change_usd_percentage": -0.3492,
+        "change_usd": -2344687.384,
+        "change_notional": -142.463,
+        "change_notional_percentage": -1.1204,
+        "change_intensity": -0.13
+      },
+      "volume": {
+        "value": 111964442.373,
+        "intensity": 0.73,
+        "notional": 2103.749,
+        "change_usd_percentage": -28.1,
+        "change_usd": -43757210.467,
+        "change_notional": -844.995,
+        "change_notional_percentage": -28.656
+      },
+      "yield": {
+        "value": 16.133,
+        "change": 16.133,
+        "intensity": 0.4
+      },
+      "basis": {
+        "value": 1.7101,
+        "change": 0.06143,
+        "intensity": 0.16
+      },
+      "open_interest_volume": {
+        "value": 5.976,
+        "change": 38.6
+      },
+      "market": {
+        "value": [
+          "BITMEX",
+          "HUOBI",
+          "BINANCE",
+          "OKEX",
+          "DERIBIT",
+          "BITGET",
+          "BYBIT",
+          "KRAKEN"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-26APR24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "26/04/24"
+      },
+      "price": {
+        "value": 53825.737
+      },
+      "change": {
+        "value": 0.836
+      },
+      "open_interest": {
+        "value": 10747284.926,
+        "intensity": 0.02,
+        "notional": 199.668,
+        "change_usd_percentage": 83.894,
+        "change_usd": 4903006.296,
+        "change_notional": 90.183,
+        "change_notional_percentage": 82.37,
+        "change_intensity": 0.27
+      },
+      "volume": {
+        "value": 9962014.806,
+        "intensity": 0.06,
+        "notional": 185.079,
+        "change_usd_percentage": 46.033,
+        "change_usd": 3140246.41,
+        "change_notional": 57.281,
+        "change_notional_percentage": 44.822
+      },
+      "yield": {
+        "value": 15.724,
+        "change": 15.724,
+        "intensity": 0.39
+      },
+      "basis": {
+        "value": 2.8679,
+        "change": 0.0969,
+        "intensity": 0.27
+      },
+      "open_interest_volume": {
+        "value": 1.079,
+        "change": 25.93
+      },
+      "market": {
+        "value": ["OKEX", "BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-28JUN24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 55182.49
+      },
+      "change": {
+        "value": 1.0896
+      },
+      "open_interest": {
+        "value": 494241565.367,
+        "intensity": 0.74,
+        "notional": 8956.493,
+        "change_usd_percentage": 3.7974,
+        "change_usd": 18081889.877,
+        "change_notional": 233.654,
+        "change_notional_percentage": 2.6786,
+        "change_intensity": 1
+      },
+      "volume": {
+        "value": 112283806.443,
+        "intensity": 0.73,
+        "notional": 2034.772,
+        "change_usd_percentage": -25.772,
+        "change_usd": -38984257.757,
+        "change_notional": -736.33,
+        "change_notional_percentage": -26.572
+      },
+      "yield": {
+        "value": 15.367,
+        "change": 15.367,
+        "intensity": 0.38
+      },
+      "basis": {
+        "value": 5.4614,
+        "change": 0.3862,
+        "intensity": 0.51
+      },
+      "open_interest_volume": {
+        "value": 4.402,
+        "change": 39.84
+      },
+      "market": {
+        "value": [
+          "BITMEX",
+          "BINANCE",
+          "OKEX",
+          "DERIBIT",
+          "BITGET",
+          "BYBIT",
+          "KRAKEN"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-27SEP24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "27/09/24"
+      },
+      "price": {
+        "value": 56756.884
+      },
+      "change": {
+        "value": 1.3349
+      },
+      "open_interest": {
+        "value": 89630487.889,
+        "intensity": 0.13,
+        "notional": 1579.2,
+        "change_usd_percentage": 10.141,
+        "change_usd": 8252841.369,
+        "change_notional": 126.267,
+        "change_notional_percentage": 8.6905,
+        "change_intensity": 0.46
+      },
+      "volume": {
+        "value": 24602550.8,
+        "intensity": 0.16,
+        "notional": 433.473,
+        "change_usd_percentage": -52.956,
+        "change_usd": -27694583.57,
+        "change_notional": -500.251,
+        "change_notional_percentage": -53.576
+      },
+      "yield": {
+        "value": 14.005,
+        "change": 14.005,
+        "intensity": 0.35
+      },
+      "basis": {
+        "value": 8.471,
+        "change": 0.664,
+        "intensity": 0.79
+      },
+      "open_interest_volume": {
+        "value": 3.643,
+        "change": 134.13
+      },
+      "market": {
+        "value": ["DERIBIT", "OKEX", "BITMEX", "BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BTC-27DEC24"
+      },
+      "currency": {
+        "value": "BTC"
+      },
+      "expiry": {
+        "value": "27/12/24"
+      },
+      "price": {
+        "value": 57904.4
+      },
+      "change": {
+        "value": 1.1023
+      },
+      "open_interest": {
+        "value": 36513970,
+        "intensity": 0.05,
+        "notional": 630.591,
+        "change_usd_percentage": 4.0339,
+        "change_usd": 1415810,
+        "change_notional": 17.769,
+        "change_notional_percentage": 2.8996,
+        "change_intensity": 0.08
+      },
+      "volume": {
+        "value": 3471822.94,
+        "intensity": 0.02,
+        "notional": 59.958,
+        "change_usd_percentage": 129.456,
+        "change_usd": 1958758.32,
+        "change_notional": 33.539,
+        "change_notional_percentage": 126.955
+      },
+      "yield": {
+        "value": 12.48,
+        "change": 12.48,
+        "intensity": 0.31
+      },
+      "basis": {
+        "value": 10.663,
+        "change": 0.443,
+        "intensity": 1
+      },
+      "open_interest_volume": {
+        "value": 10.52,
+        "change": -54.66
+      },
+      "market": {
+        "value": ["DERIBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-23FEB24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 2920.637
+      },
+      "change": {
+        "value": 3.4247
+      },
+      "open_interest": {
+        "value": 68723082.49,
+        "intensity": 0.1,
+        "notional": 23530.17,
+        "change_usd_percentage": 7.7824,
+        "change_usd": 4962104.31,
+        "change_notional": 951.332,
+        "change_notional_percentage": 4.2134,
+        "change_intensity": 0.27
+      },
+      "volume": {
+        "value": 41277750.763,
+        "intensity": 0.27,
+        "notional": 14133.134,
+        "change_usd_percentage": 54.97,
+        "change_usd": 14641835.073,
+        "change_notional": 4700.906,
+        "change_notional_percentage": 49.839
+      },
+      "yield": {
+        "value": 24.549,
+        "change": 24.549,
+        "intensity": 0.61
+      },
+      "basis": {
+        "value": 0.2594,
+        "change": -0.008874,
+        "intensity": 0.02
+      },
+      "open_interest_volume": {
+        "value": 1.665,
+        "change": -30.45
+      },
+      "market": {
+        "value": ["HUOBI", "OKEX", "DERIBIT", "BYBIT", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-1MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 2930.327
+      },
+      "change": {
+        "value": 3.5275
+      },
+      "open_interest": {
+        "value": 7201757.747,
+        "intensity": 0.01,
+        "notional": 2457.664,
+        "change_usd_percentage": 40.19,
+        "change_usd": 2064608.107,
+        "change_notional": 642.726,
+        "change_notional_percentage": 35.413,
+        "change_intensity": 0.11
+      },
+      "volume": {
+        "value": 21371468.483,
+        "intensity": 0.14,
+        "notional": 7293.203,
+        "change_usd_percentage": 108.16,
+        "change_usd": 11104641.193,
+        "change_notional": 3665.967,
+        "change_notional_percentage": 101.068
+      },
+      "yield": {
+        "value": 20.38,
+        "change": 20.38,
+        "intensity": 0.51
+      },
+      "basis": {
+        "value": 0.6004,
+        "change": 0.08767,
+        "intensity": 0.06
+      },
+      "open_interest_volume": {
+        "value": 0.337,
+        "change": -32.65
+      },
+      "market": {
+        "value": ["OKEX", "DERIBIT", "BYBIT", "HUOBI"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-8MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "08/03/24"
+      },
+      "price": {
+        "value": 2936.35
+      },
+      "change": {
+        "value": 3.2889
+      },
+      "open_interest": {
+        "value": 24.82,
+        "intensity": 0,
+        "notional": 0.008453,
+        "change_usd_percentage": 8.669,
+        "change_usd": 1.98,
+        "change_notional": 0.0004185,
+        "change_notional_percentage": 5.2087,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 15.06,
+        "intensity": 0,
+        "notional": 0.005129,
+        "change_usd_percentage": 120.821,
+        "change_usd": 8.24,
+        "change_notional": 0.00273,
+        "change_notional_percentage": 113.79
+      },
+      "yield": {
+        "value": 15.86,
+        "change": 15.86,
+        "intensity": 0.4
+      },
+      "basis": {
+        "value": 0.778,
+        "change": -0.162,
+        "intensity": 0.07
+      },
+      "open_interest_volume": {
+        "value": 1.648,
+        "change": -50.79
+      },
+      "market": {
+        "value": ["BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-29MAR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 2962.757
+      },
+      "change": {
+        "value": 3.5911
+      },
+      "open_interest": {
+        "value": 441950445.544,
+        "intensity": 0.66,
+        "notional": 149168.66,
+        "change_usd_percentage": 1.9001,
+        "change_usd": 8240714.894,
+        "change_notional": -2475.407,
+        "change_notional_percentage": -1.6324,
+        "change_intensity": 0.46
+      },
+      "volume": {
+        "value": 154268108.78,
+        "intensity": 1,
+        "notional": 52069.112,
+        "change_usd_percentage": 26.051,
+        "change_usd": 31882489.52,
+        "change_notional": 9277.697,
+        "change_notional_percentage": 21.681
+      },
+      "yield": {
+        "value": 16.131,
+        "change": 16.131,
+        "intensity": 0.4
+      },
+      "basis": {
+        "value": 1.7119,
+        "change": 0.1506,
+        "intensity": 0.16
+      },
+      "open_interest_volume": {
+        "value": 2.865,
+        "change": -19.16
+      },
+      "market": {
+        "value": [
+          "BITMEX",
+          "HUOBI",
+          "BINANCE",
+          "OKEX",
+          "DERIBIT",
+          "BITGET",
+          "BYBIT",
+          "KRAKEN"
+        ]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-26APR24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "26/04/24"
+      },
+      "price": {
+        "value": 2988.35
+      },
+      "change": {
+        "value": 3.4389
+      },
+      "open_interest": {
+        "value": 282.32,
+        "intensity": 0,
+        "notional": 0.09447,
+        "change_usd_percentage": 35.914,
+        "change_usd": 74.6,
+        "change_notional": 0.02257,
+        "change_notional_percentage": 31.395,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 54.8,
+        "intensity": 0,
+        "notional": 0.01834,
+        "change_usd_percentage": 1937.175,
+        "change_usd": 52.11,
+        "change_notional": 0.01741,
+        "change_notional_percentage": 1869.447
+      },
+      "yield": {
+        "value": 13.89,
+        "change": 13.89,
+        "intensity": 0.35
+      },
+      "basis": {
+        "value": 2.546,
+        "change": -0.031,
+        "intensity": 0.24
+      },
+      "open_interest_volume": {
+        "value": 5.152,
+        "change": -93.33
+      },
+      "market": {
+        "value": ["BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-28JUN24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 3058.568
+      },
+      "change": {
+        "value": 3.775
+      },
+      "open_interest": {
+        "value": 206394935.805,
+        "intensity": 0.31,
+        "notional": 67480.9,
+        "change_usd_percentage": 5.9245,
+        "change_usd": 11544001.475,
+        "change_notional": 1369.39,
+        "change_notional_percentage": 2.0713,
+        "change_intensity": 0.64
+      },
+      "volume": {
+        "value": 72379210.357,
+        "intensity": 0.47,
+        "notional": 23664.409,
+        "change_usd_percentage": 19.475,
+        "change_usd": 11797968.847,
+        "change_notional": 3109.633,
+        "change_notional_percentage": 15.129
+      },
+      "yield": {
+        "value": 14.075,
+        "change": 14.075,
+        "intensity": 0.35
+      },
+      "basis": {
+        "value": 5.0008,
+        "change": 0.3512,
+        "intensity": 0.47
+      },
+      "open_interest_volume": {
+        "value": 2.852,
+        "change": -11.34
+      },
+      "market": {
+        "value": ["BINANCE", "OKEX", "DERIBIT", "BITGET", "BYBIT", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-27SEP24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "27/09/24"
+      },
+      "price": {
+        "value": 3131.62
+      },
+      "change": {
+        "value": 3.7744
+      },
+      "open_interest": {
+        "value": 21711422.1,
+        "intensity": 0.03,
+        "notional": 6932.968,
+        "change_usd_percentage": 0.2459,
+        "change_usd": 53250.56,
+        "change_notional": -244.03,
+        "change_notional_percentage": -3.4002,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 297824.07,
+        "intensity": 0,
+        "notional": 95.102,
+        "change_usd_percentage": 995.557,
+        "change_usd": 270639.35,
+        "change_notional": 86.094,
+        "change_notional_percentage": 955.711
+      },
+      "yield": {
+        "value": 12.39,
+        "change": 12.39,
+        "intensity": 0.31
+      },
+      "basis": {
+        "value": 7.498,
+        "change": 0.354,
+        "intensity": 0.7
+      },
+      "open_interest_volume": {
+        "value": 72.9,
+        "change": -90.85
+      },
+      "market": {
+        "value": ["DERIBIT", "BYBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETH-27DEC24"
+      },
+      "currency": {
+        "value": "ETH"
+      },
+      "expiry": {
+        "value": "27/12/24"
+      },
+      "price": {
+        "value": 3210.77
+      },
+      "change": {
+        "value": 3.8271
+      },
+      "open_interest": {
+        "value": 22035689,
+        "intensity": 0.03,
+        "notional": 6863.054,
+        "change_usd_percentage": 0.324,
+        "change_usd": 71154,
+        "change_notional": -239.647,
+        "change_notional_percentage": -3.374,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 835619.39,
+        "intensity": 0.01,
+        "notional": 260.255,
+        "change_usd_percentage": 970.093,
+        "change_usd": 757530.9,
+        "change_notional": 235.004,
+        "change_notional_percentage": 930.649
+      },
+      "yield": {
+        "value": 11.95,
+        "change": 11.95,
+        "intensity": 0.3
+      },
+      "basis": {
+        "value": 10.215,
+        "change": 0.419,
+        "intensity": 0.96
+      },
+      "open_interest_volume": {
+        "value": 26.37,
+        "change": -90.62
+      },
+      "market": {
+        "value": ["DERIBIT"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-23FEB24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 71.108
+      },
+      "change": {
+        "value": 0.6195
+      },
+      "open_interest": {
+        "value": 146189.74,
+        "intensity": 0,
+        "notional": 2055.89,
+        "change_usd_percentage": 11.699,
+        "change_usd": 15311.23,
+        "change_notional": 203.922,
+        "change_notional_percentage": 11.011,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 73290.8,
+        "intensity": 0,
+        "notional": 1030.7,
+        "change_usd_percentage": -11.131,
+        "change_usd": -9180.12,
+        "change_notional": -136.286,
+        "change_notional_percentage": -11.678
+      },
+      "yield": {
+        "value": 16.529,
+        "change": 16.529,
+        "intensity": 0.41
+      },
+      "basis": {
+        "value": 0.1654,
+        "change": -0.02805,
+        "intensity": 0.02
+      },
+      "open_interest_volume": {
+        "value": 1.995,
+        "change": 25.69
+      },
+      "market": {
+        "value": ["OKEX", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-1MAR24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 71.353
+      },
+      "change": {
+        "value": 0.6787
+      },
+      "open_interest": {
+        "value": 61338.7,
+        "intensity": 0,
+        "notional": 859.653,
+        "change_usd_percentage": 5.073,
+        "change_usd": 2961.46,
+        "change_notional": 35.952,
+        "change_notional_percentage": 4.3646,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 13012.56,
+        "intensity": 0,
+        "notional": 182.369,
+        "change_usd_percentage": -36.881,
+        "change_usd": -7603.44,
+        "change_notional": -108.522,
+        "change_notional_percentage": -37.307
+      },
+      "yield": {
+        "value": 17.684,
+        "change": 17.684,
+        "intensity": 0.44
+      },
+      "basis": {
+        "value": 0.512,
+        "change": 0.02429,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 4.714,
+        "change": 66.47
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-29MAR24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 72.208
+      },
+      "change": {
+        "value": 0.8279
+      },
+      "open_interest": {
+        "value": 6476884.7,
+        "intensity": 0.01,
+        "notional": 89697.091,
+        "change_usd_percentage": -0.2112,
+        "change_usd": -13705.8,
+        "change_notional": -933.962,
+        "change_notional_percentage": -1.0305,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 658281.1,
+        "intensity": 0,
+        "notional": 9116.404,
+        "change_usd_percentage": 7.68,
+        "change_usd": 46950.1,
+        "change_notional": 580.113,
+        "change_notional_percentage": 6.7958
+      },
+      "yield": {
+        "value": 15.838,
+        "change": 15.838,
+        "intensity": 0.4
+      },
+      "basis": {
+        "value": 1.6896,
+        "change": 0.1586,
+        "intensity": 0.16
+      },
+      "open_interest_volume": {
+        "value": 9.839,
+        "change": -7.328
+      },
+      "market": {
+        "value": ["BINANCE", "OKEX", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LTC-28JUN24"
+      },
+      "currency": {
+        "value": "LTC"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 74.428
+      },
+      "change": {
+        "value": 0.9425
+      },
+      "open_interest": {
+        "value": 2628383.46,
+        "intensity": 0,
+        "notional": 35314.319,
+        "change_usd_percentage": -1.099,
+        "change_usd": -29207.74,
+        "change_notional": -728.952,
+        "change_notional_percentage": -2.0224,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 603841.04,
+        "intensity": 0,
+        "notional": 8113.061,
+        "change_usd_percentage": 34.175,
+        "change_usd": 153799.84,
+        "change_notional": 2009.43,
+        "change_notional_percentage": 32.922
+      },
+      "yield": {
+        "value": 13.538,
+        "change": 13.538,
+        "intensity": 0.34
+      },
+      "basis": {
+        "value": 4.82,
+        "change": 0.2858,
+        "intensity": 0.45
+      },
+      "open_interest_volume": {
+        "value": 4.353,
+        "change": -26.29
+      },
+      "market": {
+        "value": ["BINANCE", "OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-23FEB24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 0.5611
+      },
+      "change": {
+        "value": 0.4633
+      },
+      "open_interest": {
+        "value": 376473.95,
+        "intensity": 0,
+        "notional": 670933.855,
+        "change_usd_percentage": -8.9352,
+        "change_usd": -36939.15,
+        "change_notional": -69244.464,
+        "change_notional_percentage": -9.3551,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 92938.29,
+        "intensity": 0,
+        "notional": 165630.172,
+        "change_usd_percentage": 70.409,
+        "change_usd": 38399.79,
+        "change_notional": 67983.98,
+        "change_notional_percentage": 69.623
+      },
+      "yield": {
+        "value": 15.328,
+        "change": 15.328,
+        "intensity": 0.38
+      },
+      "basis": {
+        "value": 0.1541,
+        "change": -0.05718,
+        "intensity": 0.01
+      },
+      "open_interest_volume": {
+        "value": 4.051,
+        "change": -46.56
+      },
+      "market": {
+        "value": ["OKEX", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-1MAR24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 0.5634
+      },
+      "change": {
+        "value": 0.4331
+      },
+      "open_interest": {
+        "value": 299199.12,
+        "intensity": 0,
+        "notional": 531031.75,
+        "change_usd_percentage": 20.424,
+        "change_usd": 50745.52,
+        "change_notional": 88155.458,
+        "change_notional_percentage": 19.905,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 150134.41,
+        "intensity": 0,
+        "notional": 266465.15,
+        "change_usd_percentage": 7.0876,
+        "change_usd": 9936.63,
+        "change_notional": 16558.234,
+        "change_notional_percentage": 6.6258
+      },
+      "yield": {
+        "value": 19.502,
+        "change": 19.502,
+        "intensity": 0.49
+      },
+      "basis": {
+        "value": 0.5647,
+        "change": -0.01666,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 1.993,
+        "change": 12.45
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-29MAR24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 0.5683
+      },
+      "change": {
+        "value": 0.4601
+      },
+      "open_interest": {
+        "value": 3248113.22,
+        "intensity": 0,
+        "notional": 5715388.877,
+        "change_usd_percentage": -1.6382,
+        "change_usd": -54096.92,
+        "change_notional": -121923.083,
+        "change_notional_percentage": -2.0887,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 746517.38,
+        "intensity": 0,
+        "notional": 1313574.017,
+        "change_usd_percentage": 82.61,
+        "change_usd": 337712.77,
+        "change_notional": 590930.715,
+        "change_notional_percentage": 81.773
+      },
+      "yield": {
+        "value": 13.378,
+        "change": 13.378,
+        "intensity": 0.33
+      },
+      "basis": {
+        "value": 1.4278,
+        "change": -0.02099,
+        "intensity": 0.13
+      },
+      "open_interest_volume": {
+        "value": 4.351,
+        "change": -46.14
+      },
+      "market": {
+        "value": ["BINANCE", "OKEX", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "XRP-28JUN24"
+      },
+      "currency": {
+        "value": "XRP"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 0.5842
+      },
+      "change": {
+        "value": 0.4943
+      },
+      "open_interest": {
+        "value": 2005682.55,
+        "intensity": 0,
+        "notional": 3433166.926,
+        "change_usd_percentage": 0.8685,
+        "change_usd": 17268.47,
+        "change_notional": 12734.979,
+        "change_notional_percentage": 0.3723,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 476142.84,
+        "intensity": 0,
+        "notional": 815023.22,
+        "change_usd_percentage": 11.072,
+        "change_usd": 47464.43,
+        "change_notional": 77618.801,
+        "change_notional_percentage": 10.526
+      },
+      "yield": {
+        "value": 11.986,
+        "change": 11.986,
+        "intensity": 0.3
+      },
+      "basis": {
+        "value": 4.2367,
+        "change": 0.04428,
+        "intensity": 0.4
+      },
+      "open_interest_volume": {
+        "value": 4.212,
+        "change": -9.187
+      },
+      "market": {
+        "value": ["BINANCE", "OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-29MAR24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 345.638
+      },
+      "change": {
+        "value": -0.9179
+      },
+      "open_interest": {
+        "value": 3933790,
+        "intensity": 0.01,
+        "notional": 11381.243,
+        "change_usd_percentage": -1.8542,
+        "change_usd": -74320,
+        "change_notional": -108.581,
+        "change_notional_percentage": -0.945,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 497390,
+        "intensity": 0,
+        "notional": 1439.049,
+        "change_usd_percentage": 61.474,
+        "change_usd": 189360,
+        "change_notional": 556.037,
+        "change_notional_percentage": 62.97
+      },
+      "yield": {
+        "value": -18.55,
+        "change": -18.55,
+        "intensity": -0.46
+      },
+      "basis": {
+        "value": -1.98,
+        "change": 0.43,
+        "intensity": -0.19
+      },
+      "open_interest_volume": {
+        "value": 7.909,
+        "change": -39.22
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BNB-28JUN24"
+      },
+      "currency": {
+        "value": "BNB"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 340.391
+      },
+      "change": {
+        "value": -1.1698
+      },
+      "open_interest": {
+        "value": 1434220,
+        "intensity": 0,
+        "notional": 4213.449,
+        "change_usd_percentage": 9.7211,
+        "change_usd": 127070,
+        "change_notional": 418.228,
+        "change_notional_percentage": 11.02,
+        "change_intensity": 0.01
+      },
+      "volume": {
+        "value": 334680,
+        "intensity": 0,
+        "notional": 983.222,
+        "change_usd_percentage": 3.4368,
+        "change_usd": 11120,
+        "change_notional": 43.788,
+        "change_notional_percentage": 4.6611
+      },
+      "yield": {
+        "value": -9.72,
+        "change": -9.72,
+        "intensity": -0.24
+      },
+      "basis": {
+        "value": -3.51,
+        "change": 0.11,
+        "intensity": -0.33
+      },
+      "open_interest_volume": {
+        "value": 4.285,
+        "change": 6.076
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "DOT-29MAR24"
+      },
+      "currency": {
+        "value": "DOT"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 7.8258
+      },
+      "change": {
+        "value": -0.8891
+      },
+      "open_interest": {
+        "value": 1537500,
+        "intensity": 0,
+        "notional": 196465.537,
+        "change_usd_percentage": -5.6702,
+        "change_usd": -92420,
+        "change_notional": -9957.969,
+        "change_notional_percentage": -4.824,
+        "change_intensity": -0.01
+      },
+      "volume": {
+        "value": 279440,
+        "intensity": 0,
+        "notional": 35707.531,
+        "change_usd_percentage": 30.154,
+        "change_usd": 64740,
+        "change_notional": 8516.549,
+        "change_notional_percentage": 31.321
+      },
+      "yield": {
+        "value": 2.61,
+        "change": 2.61,
+        "intensity": 0.07
+      },
+      "basis": {
+        "value": 0.47,
+        "change": -0.34,
+        "intensity": 0.04
+      },
+      "open_interest_volume": {
+        "value": 5.502,
+        "change": -27.52
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "DOT-28JUN24"
+      },
+      "currency": {
+        "value": "DOT"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 7.9061
+      },
+      "change": {
+        "value": -0.4019
+      },
+      "open_interest": {
+        "value": 2419990,
+        "intensity": 0,
+        "notional": 306091.499,
+        "change_usd_percentage": 4.9345,
+        "change_usd": 113800,
+        "change_notional": 15566.178,
+        "change_notional_percentage": 5.3579,
+        "change_intensity": 0.01
+      },
+      "volume": {
+        "value": 403750,
+        "intensity": 0,
+        "notional": 51068.163,
+        "change_usd_percentage": -19.469,
+        "change_usd": -97610,
+        "change_notional": -12091.324,
+        "change_notional_percentage": -19.144
+      },
+      "yield": {
+        "value": 3.68,
+        "change": 3.68,
+        "intensity": 0.09
+      },
+      "basis": {
+        "value": 1.51,
+        "change": 0.11,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 5.994,
+        "change": 30.3
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "EOS-23FEB24"
+      },
+      "currency": {
+        "value": "EOS"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 0.7795
+      },
+      "change": {
+        "value": -0.7986
+      },
+      "open_interest": {
+        "value": 115179.243,
+        "intensity": 0,
+        "notional": 147751.659,
+        "change_usd_percentage": -0.2206,
+        "change_usd": -254.677,
+        "change_notional": 855.888,
+        "change_notional_percentage": 0.5827,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 7157.961,
+        "intensity": 0,
+        "notional": 9182.215,
+        "change_usd_percentage": -84.026,
+        "change_usd": -37651.389,
+        "change_notional": -47840.053,
+        "change_notional_percentage": -83.897
+      },
+      "yield": {
+        "value": 17.542,
+        "change": 17.542,
+        "intensity": 0.44
+      },
+      "basis": {
+        "value": 0.1717,
+        "change": -0.1422,
+        "intensity": 0.02
+      },
+      "open_interest_volume": {
+        "value": 16.09,
+        "change": 524.63
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "EOS-1MAR24"
+      },
+      "currency": {
+        "value": "EOS"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 0.7814
+      },
+      "change": {
+        "value": -0.8038
+      },
+      "open_interest": {
+        "value": 76216.882,
+        "intensity": 0,
+        "notional": 97536.28,
+        "change_usd_percentage": 1.1556,
+        "change_usd": 870.722,
+        "change_notional": 1889.303,
+        "change_notional_percentage": 1.9753,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 1787.249,
+        "intensity": 0,
+        "notional": 2287.179,
+        "change_usd_percentage": -67.585,
+        "change_usd": -3726.351,
+        "change_notional": -4711.973,
+        "change_notional_percentage": -67.322
+      },
+      "yield": {
+        "value": 14.415,
+        "change": 14.415,
+        "intensity": 0.36
+      },
+      "basis": {
+        "value": 0.4176,
+        "change": -0.08339,
+        "intensity": 0.04
+      },
+      "open_interest_volume": {
+        "value": 42.64,
+        "change": 212.06
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "EOS-29MAR24"
+      },
+      "currency": {
+        "value": "EOS"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 0.7895
+      },
+      "change": {
+        "value": -0.733
+      },
+      "open_interest": {
+        "value": 1625600.438,
+        "intensity": 0,
+        "notional": 2058999.015,
+        "change_usd_percentage": 0.07082,
+        "change_usd": 1150.388,
+        "change_notional": 16539.561,
+        "change_notional_percentage": 0.8098,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 189503.162,
+        "intensity": 0,
+        "notional": 240026.279,
+        "change_usd_percentage": -13.009,
+        "change_usd": -28338.618,
+        "change_notional": -33871.342,
+        "change_notional_percentage": -12.366
+      },
+      "yield": {
+        "value": 13.832,
+        "change": 13.832,
+        "intensity": 0.35
+      },
+      "basis": {
+        "value": 1.4616,
+        "change": -0.006988,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 8.578,
+        "change": 15.04
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "EOS-28JUN24"
+      },
+      "currency": {
+        "value": "EOS"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 0.8145
+      },
+      "change": {
+        "value": -0.5164
+      },
+      "open_interest": {
+        "value": 1144880.788,
+        "intensity": 0,
+        "notional": 1405663.132,
+        "change_usd_percentage": -2.258,
+        "change_usd": -26448.362,
+        "change_notional": -25045.594,
+        "change_notional_percentage": -1.7506,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 332107.123,
+        "intensity": 0,
+        "notional": 407754.889,
+        "change_usd_percentage": 193.821,
+        "change_usd": 219076.583,
+        "change_notional": 269694.823,
+        "change_notional_percentage": 195.346
+      },
+      "yield": {
+        "value": 13.122,
+        "change": 13.122,
+        "intensity": 0.33
+      },
+      "basis": {
+        "value": 4.6588,
+        "change": 0.1728,
+        "intensity": 0.44
+      },
+      "open_interest_volume": {
+        "value": 3.447,
+        "change": -66.73
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETC-23FEB24"
+      },
+      "currency": {
+        "value": "ETC"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 26.765
+      },
+      "change": {
+        "value": 1.8645
+      },
+      "open_interest": {
+        "value": 191653.6,
+        "intensity": 0,
+        "notional": 7160.597,
+        "change_usd_percentage": 1.8139,
+        "change_usd": 3414.5,
+        "change_notional": -3.56,
+        "change_notional_percentage": -0.04969,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 1873.2,
+        "intensity": 0,
+        "notional": 69.987,
+        "change_usd_percentage": -97.408,
+        "change_usd": -70398.5,
+        "change_notional": -2680.588,
+        "change_notional_percentage": -97.456
+      },
+      "yield": {
+        "value": 13.392,
+        "change": 13.392,
+        "intensity": 0.34
+      },
+      "basis": {
+        "value": 0.1309,
+        "change": -0.09813,
+        "intensity": 0.01
+      },
+      "open_interest_volume": {
+        "value": 102.31,
+        "change": 3828.18
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETC-1MAR24"
+      },
+      "currency": {
+        "value": "ETC"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 26.867
+      },
+      "change": {
+        "value": 1.9639
+      },
+      "open_interest": {
+        "value": 39578.2,
+        "intensity": 0,
+        "notional": 1473.089,
+        "change_usd_percentage": 105.398,
+        "change_usd": 20309.2,
+        "change_notional": 741.818,
+        "change_notional_percentage": 101.442,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 28753,
+        "intensity": 0,
+        "notional": 1070.178,
+        "change_usd_percentage": 580.142,
+        "change_usd": 24525.5,
+        "change_notional": 909.742,
+        "change_notional_percentage": 567.042
+      },
+      "yield": {
+        "value": 17.756,
+        "change": 17.756,
+        "intensity": 0.44
+      },
+      "basis": {
+        "value": 0.5145,
+        "change": 0.02166,
+        "intensity": 0.05
+      },
+      "open_interest_volume": {
+        "value": 1.376,
+        "change": -69.8
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETC-29MAR24"
+      },
+      "currency": {
+        "value": "ETC"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 27.226
+      },
+      "change": {
+        "value": 1.8743
+      },
+      "open_interest": {
+        "value": 1921281.8,
+        "intensity": 0,
+        "notional": 70567.706,
+        "change_usd_percentage": 3.506,
+        "change_usd": 65078.7,
+        "change_notional": 1112.482,
+        "change_notional_percentage": 1.6017,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 177506.4,
+        "intensity": 0,
+        "notional": 6519.72,
+        "change_usd_percentage": 43.447,
+        "change_usd": 53762.9,
+        "change_notional": 1889.498,
+        "change_notional_percentage": 40.808
+      },
+      "yield": {
+        "value": 17.563,
+        "change": 17.563,
+        "intensity": 0.44
+      },
+      "basis": {
+        "value": 1.8561,
+        "change": -0.06198,
+        "intensity": 0.17
+      },
+      "open_interest_volume": {
+        "value": 10.82,
+        "change": -27.84
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ETC-28JUN24"
+      },
+      "currency": {
+        "value": "ETC"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 28.09
+      },
+      "change": {
+        "value": 2.1415
+      },
+      "open_interest": {
+        "value": 579103.1,
+        "intensity": 0,
+        "notional": 20615.615,
+        "change_usd_percentage": 8.7024,
+        "change_usd": 46361.5,
+        "change_notional": 1244.297,
+        "change_notional_percentage": 6.4234,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 95991.7,
+        "intensity": 0,
+        "notional": 3417.229,
+        "change_usd_percentage": -19.576,
+        "change_usd": -23365.3,
+        "change_notional": -922.778,
+        "change_notional_percentage": -21.262
+      },
+      "yield": {
+        "value": 14.339,
+        "change": 14.339,
+        "intensity": 0.36
+      },
+      "basis": {
+        "value": 5.0896,
+        "change": 0.2173,
+        "intensity": 0.48
+      },
+      "open_interest_volume": {
+        "value": 6.033,
+        "change": 35.16
+      },
+      "market": {
+        "value": ["OKEX"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LINK-29MAR24"
+      },
+      "currency": {
+        "value": "LINK"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 20.315
+      },
+      "change": {
+        "value": -0.7572
+      },
+      "open_interest": {
+        "value": 1228050,
+        "intensity": 0,
+        "notional": 60450.406,
+        "change_usd_percentage": -4.3195,
+        "change_usd": -55440,
+        "change_notional": -2250.62,
+        "change_notional_percentage": -3.5894,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 644550,
+        "intensity": 0,
+        "notional": 31727.787,
+        "change_usd_percentage": -10.803,
+        "change_usd": -78060,
+        "change_notional": -3573.141,
+        "change_notional_percentage": -10.122
+      },
+      "yield": {
+        "value": 19.21,
+        "change": 19.21,
+        "intensity": 0.48
+      },
+      "basis": {
+        "value": 1.99,
+        "change": 0.02,
+        "intensity": 0.19
+      },
+      "open_interest_volume": {
+        "value": 1.905,
+        "change": 7.268
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "LINK-28JUN24"
+      },
+      "currency": {
+        "value": "LINK"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 21.096
+      },
+      "change": {
+        "value": -0.8647
+      },
+      "open_interest": {
+        "value": 763330,
+        "intensity": 0,
+        "notional": 36183.637,
+        "change_usd_percentage": 4.0058,
+        "change_usd": 29400,
+        "change_notional": 1694.445,
+        "change_notional_percentage": 4.913,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 588480,
+        "intensity": 0,
+        "notional": 27895.336,
+        "change_usd_percentage": 9.7051,
+        "change_usd": 52060,
+        "change_notional": 2687.629,
+        "change_notional_percentage": 10.662
+      },
+      "yield": {
+        "value": 16.76,
+        "change": 16.76,
+        "intensity": 0.42
+      },
+      "basis": {
+        "value": 5.94,
+        "change": 0.06,
+        "intensity": 0.56
+      },
+      "open_interest_volume": {
+        "value": 1.297,
+        "change": -5.195
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BCH-29MAR24"
+      },
+      "currency": {
+        "value": "BCH"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 273.929
+      },
+      "change": {
+        "value": 0.3045
+      },
+      "open_interest": {
+        "value": 1122423,
+        "intensity": 0,
+        "notional": 4097.501,
+        "change_usd_percentage": 7.2733,
+        "change_usd": 76102,
+        "change_notional": 266.184,
+        "change_notional_percentage": 6.9476,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 494004,
+        "intensity": 0,
+        "notional": 1803.404,
+        "change_usd_percentage": -51.264,
+        "change_usd": -519620,
+        "change_notional": -1908.186,
+        "change_notional_percentage": -51.412
+      },
+      "yield": {
+        "value": 12.901,
+        "change": 12.901,
+        "intensity": 0.32
+      },
+      "basis": {
+        "value": 1.3788,
+        "change": -0.132,
+        "intensity": 0.13
+      },
+      "open_interest_volume": {
+        "value": 2.272,
+        "change": 120.11
+      },
+      "market": {
+        "value": ["BINANCE", "KRAKEN"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "BCH-28JUN24"
+      },
+      "currency": {
+        "value": "BCH"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 278.357
+      },
+      "change": {
+        "value": 0.345
+      },
+      "open_interest": {
+        "value": 300920,
+        "intensity": 0,
+        "notional": 1081.058,
+        "change_usd_percentage": -0.9708,
+        "change_usd": -2950,
+        "change_notional": -14.364,
+        "change_notional_percentage": -1.3113,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 86870,
+        "intensity": 0,
+        "notional": 312.081,
+        "change_usd_percentage": -63.577,
+        "change_usd": -151630,
+        "change_notional": -547.688,
+        "change_notional_percentage": -63.702
+      },
+      "yield": {
+        "value": 8.44,
+        "change": 8.44,
+        "intensity": 0.21
+      },
+      "basis": {
+        "value": 2.97,
+        "change": -0.18,
+        "intensity": 0.28
+      },
+      "open_interest_volume": {
+        "value": 3.464,
+        "change": 171.88
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ADA-29MAR24"
+      },
+      "currency": {
+        "value": "ADA"
+      },
+      "expiry": {
+        "value": "29/03/24"
+      },
+      "price": {
+        "value": 0.64
+      },
+      "change": {
+        "value": -0.7752
+      },
+      "open_interest": {
+        "value": 823320,
+        "intensity": 0,
+        "notional": 1286437.5,
+        "change_usd_percentage": 1.6319,
+        "change_usd": 13220,
+        "change_notional": 30468.508,
+        "change_notional_percentage": 2.4259,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 332360,
+        "intensity": 0,
+        "notional": 519312.5,
+        "change_usd_percentage": -10.562,
+        "change_usd": -39250,
+        "change_notional": -56827.035,
+        "change_notional_percentage": -9.8634
+      },
+      "yield": {
+        "value": 13.84,
+        "change": 13.84,
+        "intensity": 0.35
+      },
+      "basis": {
+        "value": 1.5,
+        "change": -0.12,
+        "intensity": 0.14
+      },
+      "open_interest_volume": {
+        "value": 2.477,
+        "change": 13.63
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "ADA-28JUN24"
+      },
+      "currency": {
+        "value": "ADA"
+      },
+      "expiry": {
+        "value": "28/06/24"
+      },
+      "price": {
+        "value": 0.6575
+      },
+      "change": {
+        "value": -0.6798
+      },
+      "open_interest": {
+        "value": 516970,
+        "intensity": 0,
+        "notional": 786266.16,
+        "change_usd_percentage": 1.7758,
+        "change_usd": 9020,
+        "change_notional": 18970.087,
+        "change_notional_percentage": 2.4723,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 377240,
+        "intensity": 0,
+        "notional": 573749.049,
+        "change_usd_percentage": -17.8,
+        "change_usd": -81690,
+        "change_notional": -119498.685,
+        "change_notional_percentage": -17.238
+      },
+      "yield": {
+        "value": 11.91,
+        "change": 11.91,
+        "intensity": 0.3
+      },
+      "basis": {
+        "value": 4.39,
+        "change": 0.17,
+        "intensity": 0.41
+      },
+      "open_interest_volume": {
+        "value": 1.37,
+        "change": 23.81
+      },
+      "market": {
+        "value": ["BINANCE"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TRX-23FEB24"
+      },
+      "currency": {
+        "value": "TRX"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 0.1352
+      },
+      "change": {
+        "value": 0.1482
+      },
+      "open_interest": {
+        "value": 23430,
+        "intensity": 0,
+        "notional": 173298.817,
+        "change_usd_percentage": -2.9009,
+        "change_usd": -700,
+        "change_notional": -5441.924,
+        "change_notional_percentage": -3.0446,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 175060,
+        "intensity": 0,
+        "notional": 1294822.485,
+        "change_usd_percentage": -4.7862,
+        "change_usd": -8800,
+        "change_notional": -67103.441,
+        "change_notional_percentage": -4.9271
+      },
+      "yield": {
+        "value": -12.94,
+        "change": -12.94,
+        "intensity": -0.32
+      },
+      "basis": {
+        "value": -0.138,
+        "change": 0.226,
+        "intensity": -0.01
+      },
+      "open_interest_volume": {
+        "value": 0.134,
+        "change": 1.98
+      },
+      "market": {
+        "value": ["HUOBI"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "TRX-1MAR24"
+      },
+      "currency": {
+        "value": "TRX"
+      },
+      "expiry": {
+        "value": "01/03/24"
+      },
+      "price": {
+        "value": 0.1358
+      },
+      "change": {
+        "value": -0.1471
+      },
+      "open_interest": {
+        "value": 19220,
+        "intensity": 0,
+        "notional": 141531.664,
+        "change_usd_percentage": 41.845,
+        "change_usd": 5670,
+        "change_notional": 41899.311,
+        "change_notional_percentage": 42.054,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 182140,
+        "intensity": 0,
+        "notional": 1341237.113,
+        "change_usd_percentage": 0.9421,
+        "change_usd": 1700,
+        "change_notional": 14472.407,
+        "change_notional_percentage": 1.0908
+      },
+      "yield": {
+        "value": 11.68,
+        "change": 11.68,
+        "intensity": 0.29
+      },
+      "basis": {
+        "value": 0.349,
+        "change": 0.012,
+        "intensity": 0.03
+      },
+      "open_interest_volume": {
+        "value": 0.106,
+        "change": 40.52
+      },
+      "market": {
+        "value": ["HUOBI"]
+      }
+    },
+    {
+      "ticker": {
+        "value": "JUP-23FEB24"
+      },
+      "currency": {
+        "value": "JUP"
+      },
+      "expiry": {
+        "value": "23/02/24"
+      },
+      "price": {
+        "value": 0.531
+      },
+      "change": {
+        "value": 0.1887
+      },
+      "open_interest": {
+        "value": 2230.2,
+        "intensity": 0,
+        "notional": 4200,
+        "change_usd_percentage": -2.1782,
+        "change_usd": -49.66,
+        "change_notional": -101.623,
+        "change_notional_percentage": -2.3624,
+        "change_intensity": 0
+      },
+      "volume": {
+        "value": 53.1,
+        "intensity": 0,
+        "notional": 100,
+        "change_usd_percentage": -90.812,
+        "change_usd": -524.82,
+        "change_notional": -990.415,
+        "change_notional_percentage": -90.829
+      },
+      "yield": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "basis": {
+        "value": 0,
+        "change": 0,
+        "intensity": 0
+      },
+      "open_interest_volume": {
+        "value": 42,
+        "change": 964.65
+      },
+      "market": {
+        "value": ["BITMEX"]
+      }
+    }
+  ]
+}

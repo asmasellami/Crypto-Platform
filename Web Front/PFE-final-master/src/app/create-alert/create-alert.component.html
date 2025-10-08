@@ -1,0 +1,107 @@
+
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <app-menu></app-menu>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header">
+            Add Alert
+          </div>
+          <div class="card-body">
+            <form #userForm="ngForm" (ngSubmit)="onAddAlert(userForm)" novalidate>
+
+              <div class="form-group" hidden>
+                <label for="userId">User ID</label>
+                <input type="text" id="userId" class="form-control" name="userId" [ngModel]="userId" readonly>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" class="form-control" name="name" ngModel required>
+              </div>
+
+              <div class="form-group">
+                <label>Type</label>
+                <div class="form-check form-check-inline">
+                  <input type="radio" id="typeFutures" name="type" value="futures" [(ngModel)]="selectedType" (change)="updateMetrics()" class="form-check-input" required>
+                  <label class="form-check-label" for="typeFutures">Futures</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input type="radio" id="typeOptions" name="type" value="options" [(ngModel)]="selectedType" (change)="updateMetrics()" class="form-check-input" required>
+                  <label class="form-check-label" for="typeOptions">Options</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="fieldName">Metric</label>
+                <select id="fieldName" class="form-control" name="fieldName" ngModel required>
+                  <option *ngFor="let metric of availableMetrics" [value]="metric">{{ getDisplayName(metric) }}</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="operator">Operator</label>
+                <select id="operator" class="form-control" name="operator" ngModel required>
+                  <option value=">">Greater Than</option>
+                  <option value="<">Less Than</option>
+                  <option value="=">Equal To</option>
+                  <option value="!=">Not Equal To</option>
+                  <option value=">=">Greater Than or Equal To</option>
+                  <option value="<=">Less Than or Equal To</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="triggerFrequency">Trigger Frequency</label>
+                <select class="form-control" id="triggerFrequency" name="triggerFrequency" ngModel required>
+                  <option value="1min">Every 1 Minute</option>
+                  <option value="5min">Every 5 Minutes</option>
+                  <option value="24h">Every 24 Hours</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="threshold">Value</label>
+                <input type="number" id="threshold" class="form-control" name="threshold" ngModel required>
+              </div>
+
+              <div class="form-group">
+                <label for="emailNotification">Email Notification</label>
+        <select id="emailNotification" class="form-control" name="emailNotification" ngModel required>
+<!-- <select id="emailNotification" class="form-control" name="emailNotification" ngModel (change)="onEmailNotificationChange($event)" required> -->
+                  <option value="true">Yes</option>
+                  <option value="false">No</option>
+                </select>
+              </div>
+
+            <!--   <div class="form-group" *ngIf="showEmailSelector">
+                <label for="email">Select Email</label>
+                <select id="email" class="form-control" name="email" ngModel>
+                  <option *ngFor="let email of availableEmails" [value]="email">{{ email }}</option>
+                </select>
+              </div> -->
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary" [disabled]="!userForm.valid">Add Alert</button>
+              </div>
+
+            </form>
+
+            <div class="alert-summary mt-3" *ngIf="userForm.valid">
+              <h6>Summary</h6>
+              <p style="font-size: 15px;">
+                Alert me when {{ getDisplayName(userForm.value.fieldName) }} is {{ getOperatorText(userForm.value.operator) }} {{ userForm.value.threshold }} every {{ getFrequencyText(userForm.value.triggerFrequency) }}.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+

@@ -1,0 +1,52 @@
+
+
+ <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <app-menu></app-menu>
+  <div class="main-container">
+    <div class="alerts-container">
+      <div class="card-title" style="color: white; text-align: center;">
+        <h6 style="font-weight: bold;">My Alerts</h6>
+      </div>
+      <div class="header">
+        <a routerLink="/channel">
+          <button class="btn btn-primary create-channel-btn">  <i class="bi bi-envelope"></i>My channels</button>
+        </a>
+
+        <a routerLink="/addAlert">
+          <button class="btn btn-primary create-alert-btn">+ Create Alert</button>
+        </a>
+      </div>
+
+      <div class="alert-card" *ngFor="let alert of alerts">
+        <div class="alert-details">
+          <div class="alert-title">{{ alert.name }}</div>
+          <div class="alert-condition">
+            {{ getFieldDisplayName(alert.fieldName) }} {{ operatorMapping[alert.operator] }} {{ alert.threshold }}
+          </div>
+          <div class="alert-type">
+            Type: {{ alert.type }}
+          </div>
+        </div>
+        <div class="alert-actions">
+         <button type="button" class="btn edit-btn" [routerLink]="['/updateAlert', alert.id]">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" (click)="deleteAlert(alert.id)" class="btn delete-btn">
+            <i class="bi bi-trash"></i>
+          </button>
+
+          <button type="button" *ngIf="!alert.active" (click)="enableAlert(alert.id!)" class="btn enable-btn">
+            <i class="bi bi-play-circle enable-icon"></i>
+          </button>
+          <button type="button" *ngIf="alert.active" (click)="disableAlert(alert.id!)" class="btn disable-btn">
+            <i class="bi bi-pause-circle disable-icon"></i>
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

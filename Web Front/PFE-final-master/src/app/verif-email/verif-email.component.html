@@ -1,0 +1,19 @@
+
+
+ <body>
+  <div class="container">
+          <form action="" class="sign-in-form">
+              <h5 class="title">Please enter the code sent by email</h5>
+
+             <!--  <div class="alert alert-danger" *ngIf="err!=''">
+                <strong>{{err}}</strong>
+                </div> -->
+              <div class="input-field">
+
+                <input type="text" name="code" [(ngModel)]="code" class="form-control" placeholder="Confirmation code" >
+              </div>
+              <input type="submit"  (click)="onValidateEmail()" value="submit" class="btn">
+          </form>
+
+      </div>
+</body>

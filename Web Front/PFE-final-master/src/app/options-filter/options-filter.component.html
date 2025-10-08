@@ -1,0 +1,42 @@
+<div class="filter-container">
+
+  <div class="form-row">
+    <div class="form-group col-md-2">
+      <label for="selectedColumn">Column:</label>
+      <select id="selectedColumn" class="form-control" [(ngModel)]="selectedColumn" >
+        <option *ngFor="let column of columnOptions" [value]="column.key">{{ column.displayName }}</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="selectedOperator">Operator:</label>
+      <select id="selectedOperator" class="form-control" [(ngModel)]="selectedOperator">
+        <option *ngFor="let operator of operators[selectedColumn]" [value]="operator">{{ operator }}</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="filterValue">Context:</label>
+      <input id="filterValue" type="text" class="form-control" [(ngModel)]="filterValue" >
+    </div>
+    <div class="form-group col-md-1 align-self-end">
+      <button class="btn btn-secondary" (click)="addFilter()">+</button>
+    </div>
+  </div>
+
+  <div *ngFor="let filter of filters; let i = index" class="form-row" style="font-size: 13px;">
+    <div class="form-group col-md-2">
+      <strong>Column:</strong> {{ getColumnDisplayName(filter.column) }}
+    </div>
+    <div class="form-group col-md-2">
+      <strong>Operator:</strong> {{ filter.operator }}
+    </div>
+    <div class="form-group col-md-2">
+      <strong>Context:</strong> {{ filter.value }}
+    </div>
+    <div class="form-group col-md-1 align-self-end">
+      <button class="btn btn-danger" (click)="removeFilter(i)">-</button>
+    </div>
+  </div>
+
+  <div class="centered">
+    <button class="btn btn-primary small-btn"  [disabled]="ButtonDisabled"  (click)="applyFilter()">Apply Filter</button>
+  </div>

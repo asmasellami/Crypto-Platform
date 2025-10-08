@@ -1,0 +1,101 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
+body {
+  background: #080C0F;
+  font-family: 'Roboto', sans-serif;
+}
+
+.filter-container {
+  background-color: #16202a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-label {
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  background-color: #0e151a;
+  color: #fff;
+  border: 1px solid #38444d;
+  border-radius: 4px;
+  padding: 8px 12px;
+}
+
+.form-control::placeholder {
+  color: #8899a6;
+}
+
+.form-control:focus {
+  border-color: #0abdc6;
+  outline: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.icon-btn {
+  background-color: transparent;
+  color: #0abdc6;
+}
+
+.add-btn {
+  font-size: 1.5rem;
+}
+
+.remove-btn {
+  font-size: 1.5rem;
+  color: #e63946;
+}
+
+.btn-primary {
+  background-color: #0abdc6;
+  color: white;
+  padding: 8px 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.icon-btn:hover {
+  color: #08a5b5;
+}
+
+.filter-item {
+  background-color: #1b2836;
+  padding: 10px;
+  border-radius: 6px;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.filter-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+
+.centered {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 20%;
+}
+
+.small-btn {
+  padding: 10px 12px;
+  font-size: 0.8rem;
+}

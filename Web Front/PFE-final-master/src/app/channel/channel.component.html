@@ -1,0 +1,49 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.4.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <app-menu></app-menu>
+  <div class="main-container">
+    <div class="channels-container">
+      <div class="card-title" style="color: white; text-align: center;">
+        <h6 style="font-weight: bold;">My Channels</h6>
+      </div>
+      <div class="header">
+        <button (click)="toggleForm()" class="btn btn-primary create-channel-btn">
+          <i class="bi bi-plus-circle"></i> Add Channel
+        </button>
+      </div>
+
+      <!-- Add/Edit Channel Form -->
+      <div class="add-channel-form" *ngIf="showForm">
+        <form (ngSubmit)="saveChannel()" class="form-container">
+          <div class="form-group">
+            <input id="email" [(ngModel)]="newChannel.email" *ngIf="!selectedChannel" name="email" class="form-control"   required  placeholder="email@gmail.com"/>
+            <input id="email" [(ngModel)]="selectedChannel.email" *ngIf="selectedChannel" name="email" class="form-control" required />
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">{{ selectedChannel ? 'Update' : 'Add' }} </button>
+            <button type="button" (click)="toggleForm()" class="btn btn-secondary">Cancel</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="channel-card" *ngFor="let channel of channels">
+        <div class="channel-details">
+          <p>Your Email</p>
+          <div class="channel-condition">
+            {{ channel.email }}
+          </div>
+        </div>
+        <div class="channel-actions">
+          <button type="button" class="btn edit-btn" (click)="showEditForm(channel)">
+            <i class="bi bi-pencil-square"></i>
+          </button>
+          <button type="button" class="btn delete-btn" (click)="deleteChannel(channel.id)">
+            <i class="bi bi-trash"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

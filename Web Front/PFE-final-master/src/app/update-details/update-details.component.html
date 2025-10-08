@@ -1,0 +1,45 @@
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+ <body>
+  <app-menu></app-menu>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-header">
+            <i class="fas fa-edit"></i> Update Profile
+          </div>
+          <div class="card-body">
+            <!-- Update Username Form -->
+            <form (ngSubmit)="updateUsername()" #updateUsernameForm="ngForm" class="user-form">
+              <input type="hidden" id="userId" name="userId" [(ngModel)]="userId">
+              <div class="form-group">
+                <label for="username"><i class="fas fa-user"></i> New Username:</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)]="username" required placeholder="New Username">
+              </div>
+
+              <div class="centered">
+              <button type="submit" class="btn btn-primary">Update Username</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-body">
+            <!-- Update Password Form -->
+            <form (ngSubmit)="updatePassword()" #updatePasswordForm="ngForm" class="user-form">
+              <input type="hidden" id="userId" name="userId" [(ngModel)]="userId">
+              <div class="form-group">
+                <label for="new_password"><i class="fas fa-lock"></i> New Password:</label>
+                <input type="password" class="form-control" id="new_password" name="new_password" [(ngModel)]="new_password" required placeholder="New Password">
+              </div>
+
+             <div class="centered">
+              <button type="submit" class="btn btn-primary">Update Password</button>
+             </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
