@@ -12,7 +12,8 @@ Le projet inclut :
 ---
 
 ## 🛠️ Technologies utilisées
-- **Frontend Web** : Angular / Flutter (si mobile)  
+- **Frontend Web** : Angular 
+- **Frontend Mobile** : Flutter 
 - **Backend** : Spring Boot 
 - **Base de données** : MySQL 
 - **API REST / WebSocket** pour les notifications en temps réel  
